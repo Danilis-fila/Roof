@@ -1,0 +1,63 @@
+@use '../modules/variables' as v;
+
+.services {
+
+
+    &__wrapper {
+        padding: 0 10%;
+    }
+
+    &__title {
+        font-size: 28px;
+        line-height: 1.1;
+        margin-bottom: 30px;
+        font-family: 'Helios-Bold';
+        color: #000;
+        margin-top: 100px + 55px;
+
+        &::after {
+            content: "";
+            width: 100%;
+            height: 40px;
+            border-bottom: 1px solid #000;
+            display: block;
+        }
+    }
+
+    &__item {
+        margin: 0 0 50px 0;
+       // transform: translateY(80px);
+    }
+
+    &__item-title {
+        font-size: 28px;
+        line-height: 1.1;
+        margin-bottom: 30px;
+        font-family: 'Helios-Bold';
+        color: #000;
+    }
+
+    &__item-img {
+        width: 100%!important;
+        height: 450px;
+        margin: 0 0 10px 0;
+    }
+
+    &__item-line {
+        &::after {
+            content: "";
+            width: 100%;
+            height: 30px;
+            border-bottom: 1px solid v.$color-lightGrey;
+            display: block;
+        }
+    }
+
+    &__item-desc {
+        color: #000;
+        font-size: 18px;
+        font-family: 'Helios-Medium';
+        
+    }
+
+}

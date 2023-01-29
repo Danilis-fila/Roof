@@ -1,0 +1,59 @@
+@use '../modules/variables' as v;
+
+.popupGallery {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($color: #000000, $alpha: 0.6);
+  z-index: 100;
+  cursor: pointer;
+
+  &__wrapper {
+    width: 100%;
+    background-color: transparent;
+    cursor: default;
+  }
+  
+  &__item {
+    background-color: #000000;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  &__item2 {
+    height: 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+  }
+
+  &__close {
+    background-image: url('/image/close.svg');
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 0;
+    right: 0;
+    z-index: 5;
+    cursor: pointer;
+  } 
+
+  .swiper-button-prev, .swiper-button-next {
+    color: v.$color-orange;
+    height: 50px;
+  }
+
+}

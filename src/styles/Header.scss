@@ -1,0 +1,134 @@
+@use '../modules/variables' as v;
+
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  transition: top .5s ease;
+  z-index: 10;
+
+  &--active {
+    color: v.$color-orange!important;
+  }
+  
+  &__top-line {
+    width: 100%;
+    height: 36px;
+    background-color: black;
+  }
+
+  &__top-panel {
+    height: 100%;
+    padding: 0 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__working-hours {
+    display: flex;
+  }
+
+  &__shedule {
+    display: flex;
+    margin-right: 10px;
+
+    &::before {
+      content: url('../../public/image/time.svg');
+      margin-right: 5px;
+    }    
+  }
+
+  &__email {
+    display: flex;
+    margin-right: 10px;
+    
+    &::before {
+      content: url('../../public/image/email.svg');
+      margin-right: 5px;
+    }  
+  }
+
+  &__phone {
+    display: flex;
+    &::before {
+      content: url('../../public/image/phone.svg');
+      margin-right: 5px;
+    }  
+  }
+
+  &__contacts {
+    display: flex;
+  }
+
+  &__bottom-line {
+    width: 100%;
+    height: 64px;
+    background-color: #fff;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 20%);
+  }
+
+  &__bottom-panel {
+    height: 100%;
+    padding: 0 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    min-width: 96px;
+    min-height: 60px;
+    background-image: url('../../public/image/logo-roof.svg');
+    background-repeat: no-repeat;
+  }
+
+  &__menu {
+    margin: 0 8%;
+
+    & ul li:not(:last-child) {
+      margin-right: 40px;
+    }
+  }
+
+  &__menu-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__menu-item {
+    color: gray;
+    transition: color .8s ease;
+    
+    &:hover {
+      color: v.$color-orange;
+    }
+  }
+
+  &__link-phone {
+    width: 170px;
+    height: 100%;
+    background-color: v.$color-orange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+  }
+  
+}
+
+.header--is-scroll {
+  top: -36px;
+}
+
+//laptop: max-width: 1440px
+/*@media (max-width: 1440px) {
+  .header {
+    div {
+      color: aqua;
+    }
+  }
+}*/

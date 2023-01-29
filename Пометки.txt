@@ -1,0 +1,10 @@
+desktop: min-winth: 1440px
+laptop: max-width: 1440px
+tablet: max-width: 768px
+mobile: max-width: 360px
+
+
+npm install scss
+npm install swiper
+npm install @pbe/react-yandex-maps --force
+npm i nextjs-progressbar

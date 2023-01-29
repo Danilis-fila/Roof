@@ -1,0 +1,40 @@
+@use '../modules/variables' as v;
+
+.partners {
+    height: 350px;
+    background-color: #fff;
+    padding: 0 0 90px 0;
+
+    
+    &__title {
+        font-family: "Helios-Bold";
+        font-size: 28px;
+        margin-bottom: 45px;
+        text-align: center;
+        color: #000;
+    }
+
+    &__wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__card {
+        object-fit: contain;
+        background-color: #fff;
+        margin: 0 10px;
+        // background-repeat: no-repeat;
+        // background-size: contain;
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+        // background-position: center;
+
+    }
+
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+    }
+}

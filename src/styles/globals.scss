@@ -1,0 +1,128 @@
+@use '../modules/variables' as v;
+
+/*         Обнуление         */
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+/*--------------------*/
+
+ * {
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.1;
+    letter-spacing: 1.1px;
+    font-family: 'Helios-Medium';
+  }
+
+  body::-webkit-scrollbar {
+    width: 5px;               /* ширина scrollbar */
+  }
+  body::-webkit-scrollbar-track {
+    background: white;        /* цвет дорожки */
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: #BD5901;    /* цвет плашки */
+    border-radius: 0px;       /* закругления плашки */
+    border: 3px solid orange;  /* padding вокруг плашки */
+  }
+
+  @font-face {
+    font-family: "Helios-Bold";
+    src: url("../../public/fonts/HeliosCondC-Bold-webfont.ttf") format("woff2");
+  }
+
+  @font-face {
+    font-family: "Helios-Medium";
+    src: url("../../public/fonts/HeliosCondC-webfont.ttf") format("woff2");
+  }
+
+  ::selection {
+    background-color: v.$color-orange;
+    color: #fff;
+  }
+
+  .animate-view {
+    transform: translateY(80px);
+  }
+  
+  .is-ready {
+    transform: translateY(0);//!important;
+    transition: transform .6s;
+  }
+
+  .estimate-animate-view {
+    transform: translateY(145px);
+    opacity: 0;
+  }
+
+  .is-ready-estimate:nth-child(1) {
+    transform: translateY(0);
+    transition: transform .6s .1s, opacity .6s .1s;
+    opacity: 1;
+  }
+
+  .is-ready-estimate:nth-child(2) {
+    transform: translateY(0);
+    transition: transform .6s .2s, opacity .6s .2s;
+    opacity: 1;
+  }
+
+  .is-ready-estimate:nth-child(3) {
+    transform: translateY(0);
+    transition: transform .6s .3s, opacity .6s .3s;
+    opacity: 1;
+  }
+
+  .is-ready-estimate:nth-child(4) {
+    transform: translateY(0);
+    transition: transform .6s .4s, opacity .6s .4s;
+    opacity: 1;
+  }
+
+  .gallery-animate-view {
+    transform: translateY(145px);
+    opacity: 0;
+  }
+
+  .is-ready-gallery:nth-child(1) {
+    transform: translateY(0);
+    transition: transform .6s .1s, opacity .6s .1s;
+    opacity: 1;
+  }
+
+  .is-ready-gallery:nth-child(2) {
+    transform: translateY(0);
+    transition: transform .6s .2s, opacity .6s .2s;
+    opacity: 1;
+  }
+
+  .is-ready-gallery:nth-child(3) {
+    transform: translateY(0);
+    transition: transform .6s .3s, opacity .6s .3s;
+    opacity: 1;
+  }
+
+  .is-ready-gallery:nth-child(4) {
+    transform: translateY(0);
+    transition: transform .6s .4s, opacity .6s .4s;
+    opacity: 1;
+  }
+
+  .is-ready-gallery:nth-child(5) {
+    transform: translateY(0);
+    transition: transform .6s .5s, opacity .6s .5s;
+    opacity: 1;
+  }
+

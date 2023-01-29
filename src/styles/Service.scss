@@ -1,0 +1,85 @@
+@use '../modules/variables' as v;
+
+.service {
+  padding: 0 10%;
+  margin: 0 0 70px 0;
+
+  &__title {
+    color: #000;
+    font-family: 'Helios-Bold';
+    font-size: 28px;
+    margin-bottom: 30px;
+    text-align: center;
+
+    &::after {
+      content: "";
+      width: 12%;
+      height: 30px;
+      border-bottom: 1px solid #000;
+      display: block;
+      margin: auto;
+    }
+  }
+
+  &__title2 {
+    color: #000;
+    font-size: 17px;
+    margin-bottom: 45px;
+    text-align: center;
+    
+  }
+
+  &__cards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+    .service__card:nth-child(7) {
+      .service__card-wrapper {
+        margin-bottom: 0px;
+      }
+    }
+  }
+
+  &__card {
+    max-width: 33.3%;
+    padding: 0 10px;
+    position: relative;
+  }
+
+  &__card-wrapper {
+    padding-left: 80px;
+    margin-bottom: 60px;
+  }
+
+  &__card-img {
+    position: absolute;
+    left: 0 + 10px;
+    width: 56px;
+    height: 56px;
+    border-radius: 5px;
+    border: 1px solid v.$color-darkOrange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  
+  &__card-title {
+    font-family: 'Helios-Bold';
+    font-size: 16px;
+    line-height: 1;
+    color: #000;
+    margin-bottom: 10px;
+  }
+
+  &__card-desc {
+    font-size: 13px;
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+  }
+}
