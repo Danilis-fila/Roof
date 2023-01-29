@@ -19,17 +19,17 @@ export default function AboutUs() {
 
   let runningNumber = true;
   const runningNumbers = useCallback(() => {
-  const animateElements = document.querySelector(".aboutUs");
-  const rect = animateElements?.getBoundingClientRect();
-  if (rect === undefined) return;
-  const win = window.innerHeight - rect.top;
-  if ((win + 450) > 0 && runningNumber) {
-    runningNumber = false;
-    outNum(300, 3500, 1, '.aboutUs__number-project');
-    outNum(7500, 3000, 10, '.aboutUs__number-performed');
-    outNum(10, 5000, 1, '.aboutUs__number-years');
-  }
-  })
+    const animateElements = document.querySelector(".aboutUs");
+    const rect = animateElements?.getBoundingClientRect();
+    if (rect === undefined) return;
+    const win = window.innerHeight - rect.top;
+    if ((win + 450) > 0 && runningNumber) {
+      runningNumber = false;
+      outNum(300, 3500, 1, '.aboutUs__number-project');
+      outNum(7500, 3000, 10, '.aboutUs__number-performed');
+      outNum(10, 5000, 1, '.aboutUs__number-years');
+    }
+  }, [])
 
   
   useEffect(() => {

@@ -1,4 +1,5 @@
-import React, {useState} from "react";
+import React, {useEffect, useCallback, useState} from "react";
+import Image from "next/image";
 import PopupGallery from "../PopupGallery/PopupGallery";
 
 
@@ -42,49 +43,73 @@ export default function Gallery() {
     setShowModal(false);
   }
 
+  const galleryScroll = useCallback(() => {
+    const animateElements = document.querySelectorAll('[gallery-scroll]');
+    animateElements.forEach((element) => {
+        const rect = element.getBoundingClientRect();
+        // if(rect === null) animateElements = document.querySelectorAll('[estimate-scroll]');
+        const win = window.innerHeight - rect.top;
+        if (win > -70) {
+            element.classList.add('is-ready-gallery')
+        } else {
+            element.classList.remove('is-ready-gallery')
+        }
+    })
+  })
+  
+  useEffect(() => {
+    window.addEventListener("scroll", galleryScroll);
+    galleryScroll();
+    return () => window.removeEventListener("scroll", galleryScroll);
+  }, [])
+  
+  useEffect(() => {
+    const animateElements = document.querySelectorAll("[gallery-scroll]");
+      animateElements.forEach((element) => {
+          element.classList.add('gallery-animate-view')
+      })
+  }, [galleryScroll])
+
   return (
       <div className="gallery">
         <div className="gallery__wrapper">
 
           <a className="gallery__item" gallery-scroll="true"  onClick={() => {setShowModal(true); setArray(item1)}}>
             <div className="gallery__item-wrapper">
-              <img className="gallery__item-img" src="/image/photoPVH/pvh20.jpg"></img>
+              <Image className="gallery__item-img" src="/image/photoPVH/pvh20.jpg" alt="Фото мембраны" width={500} height={500}/>
             </div>
             <div className="gallery__item-title">Lorem, ipsum.</div>
           </a>
 
           <a className="gallery__item" gallery-scroll="true" onClick={() => {setShowModal(true); setArray(item2)}}>
             <div className="gallery__item-wrapper">
-              <img className="gallery__item-img" src="/image/photoPVH/pvh23.jpg"></img>
+              <Image className="gallery__item-img" src="/image/photoPVH/pvh23.jpg" alt="Фото мембраны" width={500} height={500}/>
             </div>
             <div className="gallery__item-title">Lorem, ipsum dolor.</div>
           </a>
 
           <a className="gallery__item" gallery-scroll="true" onClick={() => {setShowModal(true); setArray(item3)}}>
             <div className="gallery__item-wrapper">
-              <img className="gallery__item-img" src="/image/photoPVH/pvh24.jpg"></img>
+            <Image className="gallery__item-img" src="/image/photoPVH/pvh24.jpg" alt="Фото мембраны" width={500} height={500}/>
             </div>
             <div className="gallery__item-title">Lorem, ipsum.</div>
           </a>
 
           <a className="gallery__item" gallery-scroll="true" onClick={() => {setShowModal(true); setArray(item4)}}>
             <div className="gallery__item-wrapper">
-              <img className="gallery__item-img" src="/image/photoPVH/pvh8.jpg"></img>
+              <Image className="gallery__item-img" src="/image/photoPVH/pvh8.jpg" alt="Фото мембраны" width={500} height={500}/>
             </div>
             <div className="gallery__item-title">Lorem, ipsum dolor.</div>
           </a>
 
           <a className="gallery__item" gallery-scroll="true" onClick={() => {setShowModal(true); setArray(item5)}}>
             <div className="gallery__item-wrapper">
-              <img className="gallery__item-img" src="/image/photoPVH/pvh27.jpg"></img>
+              <Image className="gallery__item-img" src="/image/photoPVH/pvh27.jpg" alt="Фото мембраны" width={500} height={500}/>
             </div>
             <div className="gallery__item-title">Lorem ipsum dolor sit.</div>
           </a>
 
-          <PopupGallery active={showModal} onClose={closePopup} gallery={array}>
-
-          </PopupGallery>
-
+          <PopupGallery active={showModal} onClose={closePopup} gallery={array}/>
         </div>
       </div>  
     )

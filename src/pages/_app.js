@@ -51,64 +51,6 @@ export default function App({ Component, pageProps }) {
       })
   }, [dataScroll])
   
-  
-  
-  const estimateScroll = useCallback(() => {
-    const animateElements = document.querySelectorAll('[estimate-scroll]');
-    animateElements.forEach((element) => {
-        const rect = element.getBoundingClientRect();
-        // if(rect === null) animateElements = document.querySelectorAll('[estimate-scroll]');
-        const win = window.innerHeight - rect.top;
-        if (win > -70) {
-            element.classList.add('is-ready-estimate')
-        } else {
-            element.classList.remove('is-ready-estimate')
-        }
-    })
-  })
-  
-  useEffect(() => {
-    window.addEventListener("scroll", estimateScroll);
-    estimateScroll();
-    return () => window.removeEventListener("scroll", estimateScroll);
-  }, [])
-  
-  useEffect(() => {
-    const animateElements = document.querySelectorAll("[estimate-scroll]");
-      animateElements.forEach((element) => {
-          element.classList.add('estimate-animate-view')
-      })
-  }, [estimateScroll])
-
-
-  const galleryScroll = useCallback(() => {
-    const animateElements = document.querySelectorAll('[gallery-scroll]');
-    animateElements.forEach((element) => {
-        const rect = element.getBoundingClientRect();
-        // if(rect === null) animateElements = document.querySelectorAll('[estimate-scroll]');
-        const win = window.innerHeight - rect.top;
-        if (win > -70) {
-            element.classList.add('is-ready-gallery')
-        } else {
-            element.classList.remove('is-ready-gallery')
-        }
-    })
-  })
-  
-  useEffect(() => {
-    window.addEventListener("scroll", galleryScroll);
-    galleryScroll();
-    return () => window.removeEventListener("scroll", galleryScroll);
-  }, [])
-  
-  useEffect(() => {
-    const animateElements = document.querySelectorAll("[gallery-scroll]");
-      animateElements.forEach((element) => {
-          element.classList.add('gallery-animate-view')
-      })
-  }, [galleryScroll])
-
-
   return (
     <>
       <NextNProgress color='#FE8702' startPosition={1}/>
