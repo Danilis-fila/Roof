@@ -2,7 +2,7 @@ import React, {useEffect, useCallback} from "react";
 
 export default function Estimate() {
 
-  const estimateScroll = () => {
+  const estimateScroll = useCallback(() => {
     const animateElements = document.querySelectorAll('[estimate-scroll]');
     animateElements.forEach((element) => {
         const rect = element.getBoundingClientRect();
@@ -14,7 +14,7 @@ export default function Estimate() {
             element.classList.remove('is-ready-estimate')
         }
     })
-  }
+  }, [])
   
   useEffect(() => {
     window.addEventListener("scroll", estimateScroll);

@@ -43,7 +43,7 @@ export default function Gallery() {
     setShowModal(false);
   }
 
-  const galleryScroll = () => {
+  const galleryScroll = useCallback(() => {
     const animateElements = document.querySelectorAll('[gallery-scroll]');
     animateElements.forEach((element) => {
         const rect = element.getBoundingClientRect();
@@ -55,7 +55,7 @@ export default function Gallery() {
             element.classList.remove('is-ready-gallery')
         }
     })
-  }
+  }, [])
   
   useEffect(() => {
     window.addEventListener("scroll", galleryScroll);
