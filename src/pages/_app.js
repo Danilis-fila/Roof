@@ -23,7 +23,7 @@ import '../styles/PopupGallery.scss';
 // });
 
 export default function App({ Component, pageProps }) {
-
+  
   const dataScroll = useCallback(() => {
     const animateElements = document.querySelectorAll('[data-scroll]');
     animateElements.forEach((element) => {
@@ -50,7 +50,7 @@ export default function App({ Component, pageProps }) {
           element.classList.add('animate-view')
       })
   }, [dataScroll])
-  
+
   return (
     <>
       <NextNProgress color='#FE8702' startPosition={1}/>

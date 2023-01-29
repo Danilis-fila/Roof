@@ -1,10 +1,36 @@
+import React, { useEffect, useCallback } from 'react';
 import Head from 'next/head';
 import servicesData from './Services.json';
 import Image from 'next/image';
 
 export default function Services() {
 
-
+  const dataScroll = useCallback(() => {
+    const animateElements = document.querySelectorAll('[data-scroll]');
+    animateElements.forEach((element) => {
+      const rect = element.getBoundingClientRect();
+      // if(rect === null) animateElements = document.querySelectorAll('[data-scroll]');
+      const win = window.innerHeight - rect.top;
+      if (win > 0) {
+          element.classList.add('is-ready')
+      } else {
+          element.classList.remove('is-ready')
+      }
+    })
+  }, [])
+  
+  useEffect(() => {
+    window.addEventListener("scroll", dataScroll);
+    dataScroll();
+    return () => window.removeEventListener("scroll", dataScroll);
+  })
+  
+  useEffect(() => {
+    const animateElements = document.querySelectorAll("[data-scroll]");
+      animateElements.forEach((element) => {
+          element.classList.add('animate-view')
+      })
+  }, [dataScroll])
 
   return (
     <>
@@ -20,9 +46,9 @@ export default function Services() {
                 {
                     servicesData.map(data => {
                         return (
-                            <div className="services__item" key={data.id} data-scroll>
+                            <div className="services__item" key={data.id} data-scroll="true">
                                 <h2 className="services__item-title">{data.title}</h2>
-                                <Image className="services__item-img" src={data.img} alt="membrane" width={500} height={450} ></Image>
+                                <Image className="services__item-img" src={data.img} alt="фото мембраны" width={500} height={450} ></Image>
                                 <div className="services__item-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
                                 Maxime, voluptatem sunt, reiciendis quas, minus expedita labore eum culpa perferendis 
                                 dignissimos tempore inventore ipsam totam. Culpa, eligendi? Reiciendis iste accusantium 
