@@ -18,7 +18,7 @@ export default function AboutUs() {
   
 
   let runningNumber = true;
-  const runningNumbers = useCallback(() => {
+  const runningNumbers = () => {
     const animateElements = document.querySelector(".aboutUs");
     const rect = animateElements?.getBoundingClientRect();
     if (rect === undefined) return;
@@ -29,14 +29,14 @@ export default function AboutUs() {
       outNum(7500, 3000, 10, '.aboutUs__number-performed');
       outNum(10, 5000, 1, '.aboutUs__number-years');
     }
-  }, [])
+  }
 
   
   useEffect(() => {
     window.addEventListener("scroll", runningNumbers);
     runningNumbers();
     return () => window.removeEventListener("scroll", runningNumbers);
-  }, [])
+  })
 
  
   return (
