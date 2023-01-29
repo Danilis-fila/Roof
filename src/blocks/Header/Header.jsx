@@ -19,7 +19,7 @@ export default function Header() {
       window.addEventListener("scroll", homePageMove);
       homePageMove();
       return () => window.removeEventListener("scroll", homePageMove);
-  }, [])
+  })
 
   return (
     <div className="header">

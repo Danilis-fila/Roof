@@ -24,7 +24,7 @@ import '../styles/PopupGallery.scss';
 
 export default function App({ Component, pageProps }) {
 
-  const dataScroll = useCallback(() => {
+  const dataScroll = () => {
     const animateElements = document.querySelectorAll('[data-scroll]');
     animateElements.forEach((element) => {
       const rect = element.getBoundingClientRect();
@@ -36,13 +36,13 @@ export default function App({ Component, pageProps }) {
           element.classList.remove('is-ready')
       }
     })
-  })
+  }
   
   useEffect(() => {
     window.addEventListener("scroll", dataScroll);
     dataScroll();
     return () => window.removeEventListener("scroll", dataScroll);
-  }, [])
+  })
   
   useEffect(() => {
     const animateElements = document.querySelectorAll("[data-scroll]");
