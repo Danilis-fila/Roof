@@ -2,36 +2,43 @@
     {
         "id": 0,
         "title": "Ремонт и реконструкция мембранной кровли",
+        "description": "22. описание",
         "img": "/image/photoPVH/pvh12.jpg"
     },
     {
         "id": 1,
         "title": "Устройство мембранной кровли",
+        "description": "23. описание",
         "img": "/image/photoPVH/pvh13.JPG"
     },
     {
         "id": 2,
         "title": "Реконструкция битумной кровли на мембранную из ПВХ, ТПО мембран",
+        "description": "24. описание",
         "img": "/image/photoPVH/pvh14.JPG"
     },
     {
         "id": 3,
         "title": "Устройство эксплуатируемой кровли из ПВХ, ТПО (полимерных) мембран",
+        "description": "25. описание",
         "img": "/image/photoPVH/pvh15.JPG"
     },
     {
         "id": 4,
         "title": "Гидроизоляция террас полимерными мембранами",
+        "description": "26. описание",
         "img": "/image/photoPVH/pvh16.JPG"
     },
     {
         "id": 5,
         "title": "Устройство гидроизоляции подземных сооружений ПВХ мембраной",
+        "description": "27. описание",
         "img": "/image/photoPVH/pvh17.jpg"
     },
     {
         "id": 6,
         "title": "Монтаж мембранных кровель с имитацией фальца",
+        "description": "28. описание",
         "img": "/image/photoPVH/pvh11.jpg"
     }
 ]

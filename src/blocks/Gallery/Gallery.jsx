@@ -78,35 +78,35 @@ export default function Gallery() {
             <div className="gallery__item-wrapper">
               <Image className="gallery__item-img" src="/image/photoPVH/pvh20.jpg" alt="Фото мембраны" width={500} height={500}/>
             </div>
-            <div className="gallery__item-title">Lorem, ipsum.</div>
+            <div className="gallery__item-title">8. описание</div>
           </a>
 
           <a className="gallery__item" gallery-scroll="true" onClick={() => {setShowModal(true); setArray(item2)}}>
             <div className="gallery__item-wrapper">
               <Image className="gallery__item-img" src="/image/photoPVH/pvh23.jpg" alt="Фото мембраны" width={500} height={500}/>
             </div>
-            <div className="gallery__item-title">Lorem, ipsum dolor.</div>
+            <div className="gallery__item-title">9. описание</div>
           </a>
 
           <a className="gallery__item" gallery-scroll="true" onClick={() => {setShowModal(true); setArray(item3)}}>
             <div className="gallery__item-wrapper">
             <Image className="gallery__item-img" src="/image/photoPVH/pvh24.jpg" alt="Фото мембраны" width={500} height={500}/>
             </div>
-            <div className="gallery__item-title">Lorem, ipsum.</div>
+            <div className="gallery__item-title">10. описание</div>
           </a>
 
           <a className="gallery__item" gallery-scroll="true" onClick={() => {setShowModal(true); setArray(item4)}}>
             <div className="gallery__item-wrapper">
               <Image className="gallery__item-img" src="/image/photoPVH/pvh8.jpg" alt="Фото мембраны" width={500} height={500}/>
             </div>
-            <div className="gallery__item-title">Lorem, ipsum dolor.</div>
+            <div className="gallery__item-title">11. описание</div>
           </a>
 
           <a className="gallery__item" gallery-scroll="true" onClick={() => {setShowModal(true); setArray(item5)}}>
             <div className="gallery__item-wrapper">
               <Image className="gallery__item-img" src="/image/photoPVH/pvh27.jpg" alt="Фото мембраны" width={500} height={500}/>
             </div>
-            <div className="gallery__item-title">Lorem ipsum dolor sit.</div>
+            <div className="gallery__item-title">12. описание</div>
           </a>
 
           <PopupGallery active={showModal} onClose={closePopup} gallery={array}/>

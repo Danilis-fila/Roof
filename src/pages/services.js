@@ -49,11 +49,7 @@ export default function Services() {
                             <div className="services__item" key={data.id} data-scroll="true">
                                 <h2 className="services__item-title">{data.title}</h2>
                                 <Image className="services__item-img" src={data.img} alt="фото мембраны" width={500} height={450} ></Image>
-                                <div className="services__item-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                                Maxime, voluptatem sunt, reiciendis quas, minus expedita labore eum culpa perferendis 
-                                dignissimos tempore inventore ipsam totam. Culpa, eligendi? Reiciendis iste accusantium 
-                                necessitatibus quibusdam deserunt. Qui eum ab odit sed nam fugit laborum sint labore 
-                                deserunt temporibus dolores, officia est expedita ducimus magnam?</div>
+                                <div className="services__item-desc">{data.description}</div>
                                 <div className="services__item-line"></div>
                             </div>
                         )
