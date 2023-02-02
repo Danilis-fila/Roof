@@ -32,8 +32,8 @@ export default function Header() {
           </div>
 
           <div className="header__contacts">
-            <div className="header__email">asdsa@gmail.com</div>
-            <div className="header__phone">+79780000000</div>
+            <div className="header__email">crimearoof@gmail.com</div>
+            <div className="header__phone">+7(978)809-98-82</div>
           </div>
         </div>
       </div>
@@ -57,7 +57,7 @@ export default function Header() {
               </li>
             </ul>
           </div>
-          <a className="header__link-phone" href="tel:+79780000000">ПОЗВОНИТЬ СЕЙЧАС</a>
+          <a className="header__link-phone" href="tel:+79788099882">ПОЗВОНИТЬ СЕЙЧАС</a>
         </div>
       </div>
     </div>

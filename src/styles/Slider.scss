@@ -55,6 +55,7 @@
         opacity: 0;
         transition: transform 0.8s cubic-bezier(.19,1,.4,1), opacity 0.8s cubic-bezier(.19,1,.4,1);
         white-space: pre-wrap;
+        text-transform: uppercase;
     }
 
     &__slite-description {

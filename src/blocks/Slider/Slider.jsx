@@ -1,12 +1,5 @@
 import React, {useEffect, useState} from "react";
-
 import sliderData from './SliderData.json';
-
-// import { Swiper, SwiperSlide } from 'swiper/react';
-// import 'swiper/css';
-// import { Pagination, EffectFade } from 'swiper';
-// import 'swiper/css';
-// import 'swiper/css/pagination';
 
 export default function Slider() {
 
@@ -35,9 +28,6 @@ export default function Slider() {
                 <li className={`slider__pagination ${currSlide === 1 ? 'slider__pagination--active' : ''}`} onClick={() => setCurrSlide(1)}></li>
                 <li className={`slider__pagination ${currSlide === 2 ? 'slider__pagination--active' : ''}`} onClick={() => setCurrSlide(2)}></li>
                 <li className={`slider__pagination ${currSlide === 3 ? 'slider__pagination--active' : ''}`} onClick={() => setCurrSlide(3)}></li>
-                <li className={`slider__pagination ${currSlide === 4 ? 'slider__pagination--active' : ''}`} onClick={() => setCurrSlide(4)}></li>
-                <li className={`slider__pagination ${currSlide === 5 ? 'slider__pagination--active' : ''}`} onClick={() => setCurrSlide(5)}></li>
-                <li className={`slider__pagination ${currSlide === 6 ? 'slider__pagination--active' : ''}`} onClick={() => setCurrSlide(6)}></li>
             </ul>
         </div>
     )

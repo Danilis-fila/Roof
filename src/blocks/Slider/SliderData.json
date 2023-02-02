@@ -1,45 +1,26 @@
 [
     {
       "id": 1,
-      "sliderTitle": "1. Заголовок и описание",
+      "sliderTitle": "Устройство плоской кровли",
       "sliderDescription": "",
       "img": "/image/photoPVH/pvh7.jpg"
     },
     {
       "id": 2,
-      "sliderTitle": "2. Заголовок и описание",
+      "sliderTitle": "Замена битумной кровли на мембранную",
       "sliderDescription": "",
       "img": "/image/photoPVH/pvh2.jpg"
     },
     {
       "id": 3,
-      "sliderTitle": "3. Заголовок и описание",
+      "sliderTitle": "Устройство эксплуатируемы террас и кровли",
       "sliderDescription": "",
       "img": "/image/photoPVH/pvh3.jpg"
     },
     {
       "id": 4,
-      "sliderTitle": "4. Заголовок и описание",
+      "sliderTitle": "Гидроизоляция фундаментов и подземных сооружений",
       "sliderDescription": "",
       "img": "/image/photoPVH/pvh4.jpg"
-    },
-    {
-      "id": 5,
-      "sliderTitle": "5. Заголовок и описание",
-      "sliderDescription": "",
-      "img": "/image/photoPVH/pvh5.jpg"
-    },
-    {
-      "id": 6,
-      "sliderTitle": "6. Заголовок и описание",
-      "sliderDescription": "",
-      "img": "/image/photoPVH/pvh6.jpg"
-    },
-    {
-      "id": 7,
-      "sliderTitle": "7. Заголовок и описание",
-      "sliderDescription": "",
-      "img": "/image/photoPVH/pvh1.jpg"
     }
-
 ]

@@ -28,12 +28,12 @@ export default function Contacts() {
 
               <div className="contacts__element">
                 <div className="contacts__element-title">Телефон, Viber, Whatsapp:</div>
-                <div className="contacts__element-desc">+7(978)016-78-23</div>  
+                <div className="contacts__element-desc">+7(978)809-98-82</div>  
               </div>
 
               <div className="contacts__element">
                 <div className="contacts__element-title">E-mail:</div>
-                <div className="contacts__element-desc">pvc-master@mail.ru</div>  
+                <div className="contacts__element-desc">crimearoof@gmail.com</div>  
               </div>
 
               <div className="contacts__element">
