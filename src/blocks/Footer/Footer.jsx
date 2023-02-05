@@ -11,7 +11,7 @@ export default function Footer() {
                 </div>
                 <div className="footer__address">
                     <p>Крым г.Симферополь,</p>
-                    <p>ул. Софьи Перовской, 75</p>
+                    <p>Заводской пер, дом №44</p>
                 </div>
                 <div className="footer__time">
                     <p>пн–сб: 8:00–18:00</p>

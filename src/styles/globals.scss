@@ -53,6 +53,8 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
     color: #fff;
   }
 
+
+  
   .animate-view {
     transform: translateY(80px);
   }
@@ -62,67 +64,31 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
     transition: transform .6s;
   }
 
+
+
   .estimate-animate-view {
     transform: translateY(145px);
     opacity: 0;
   }
 
-  .is-ready-estimate:nth-child(1) {
-    transform: translateY(0);
-    transition: transform .6s .1s, opacity .6s .1s;
-    opacity: 1;
+  @for $i from 1 to 5 {
+    .is-ready-estimate:nth-child(#{$i}) {
+      transform: translateY(0);
+      transition: transform .6s calc(#{$i}s / 10), opacity .6s calc(#{$i}s / 10);
+      opacity: 1;
+    }
   }
 
-  .is-ready-estimate:nth-child(2) {
-    transform: translateY(0);
-    transition: transform .6s .2s, opacity .6s .2s;
-    opacity: 1;
-  }
-
-  .is-ready-estimate:nth-child(3) {
-    transform: translateY(0);
-    transition: transform .6s .3s, opacity .6s .3s;
-    opacity: 1;
-  }
-
-  .is-ready-estimate:nth-child(4) {
-    transform: translateY(0);
-    transition: transform .6s .4s, opacity .6s .4s;
-    opacity: 1;
-  }
 
   .gallery-animate-view {
     transform: translateY(145px);
     opacity: 0;
   }
 
-  .is-ready-gallery:nth-child(1) {
-    transform: translateY(0);
-    transition: transform .6s .1s, opacity .6s .1s;
-    opacity: 1;
+  @for $i from 1 to 8 {
+    .is-ready-gallery:nth-child(#{$i}) {
+      transform: translateY(0);
+      transition: transform .6s calc(#{$i}s / 10), opacity .6s calc(#{$i}s / 10);
+      opacity: 1;
+    }
   }
-
-  .is-ready-gallery:nth-child(2) {
-    transform: translateY(0);
-    transition: transform .6s .2s, opacity .6s .2s;
-    opacity: 1;
-  }
-
-  .is-ready-gallery:nth-child(3) {
-    transform: translateY(0);
-    transition: transform .6s .3s, opacity .6s .3s;
-    opacity: 1;
-  }
-
-  .is-ready-gallery:nth-child(4) {
-    transform: translateY(0);
-    transition: transform .6s .4s, opacity .6s .4s;
-    opacity: 1;
-  }
-
-  .is-ready-gallery:nth-child(5) {
-    transform: translateY(0);
-    transition: transform .6s .5s, opacity .6s .5s;
-    opacity: 1;
-  }
-
