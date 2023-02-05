@@ -74,7 +74,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
   @for $i from 1 to 5 {
     .is-ready-estimate:nth-child(#{$i}) {
       transform: translateY(0);
-      transition: transform .6s calc(#{$i}s / 10), opacity .6s calc(#{$i}s / 10);
+      transition: transform .6s calc(#{$i}s / 10), opacity .6s calc(#{$i}s / 10) ease-out;
       opacity: 1;
     }
   }
@@ -88,7 +88,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
   @for $i from 1 to 8 {
     .is-ready-gallery:nth-child(#{$i}) {
       transform: translateY(0);
-      transition: transform .6s calc(#{$i}s / 10), opacity .6s calc(#{$i}s / 10);
+      transition: transform .6s calc(#{$i}s / 10), opacity .6s calc(#{$i}s / 10)  ease-out;
       opacity: 1;
     }
   }
