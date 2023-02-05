@@ -74,8 +74,13 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
   @for $i from 1 to 5 {
     .is-ready-estimate:nth-child(#{$i}) {
       transform: translateY(0);
-      transition: transform .6s calc(#{$i}s / 10), opacity .6s calc(#{$i}s / 10) ease-out;
       opacity: 1;
+
+      transition-duration: 0.6s, 0.6s;
+      transition-timing-function: ease-out, ease-out;
+      transition-delay: calc(#{$i}s / 10), calc(#{$i}s / 10);
+      transition-property: transform, opacity;
+      //transition: transform .6s calc(#{$i}s / 10), opacity .6s calc(#{$i}s / 10) ease-out;
     }
   }
 
@@ -88,7 +93,10 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
   @for $i from 1 to 8 {
     .is-ready-gallery:nth-child(#{$i}) {
       transform: translateY(0);
-      transition: transform .6s calc(#{$i}s / 10), opacity .6s calc(#{$i}s / 10)  ease-out;
       opacity: 1;
+      transition-duration: 0.6s, 0.6s;
+      transition-timing-function: ease-out, ease-out;
+      transition-delay: calc(#{$i}s / 10), calc(#{$i}s / 10);
+      transition-property: transform, opacity;
     }
   }
