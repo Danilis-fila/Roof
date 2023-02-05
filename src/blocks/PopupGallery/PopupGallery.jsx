@@ -30,7 +30,8 @@ export default function PopupGallery({active, onClose, gallery}) {
             gallery.map((img, index) => {
               return (
                 <SwiperSlide key={index}>
-                  <div className="popupGallery__item2" style={{backgroundImage: `url(${img})`}}></div>
+                  <div className="popupGallery__item" style={{backgroundImage:`url(${img})`}}></div>
+                  {/* <Image className="popupGallery__item"  src={img} alt="Фото мембраны" width={500} height={500}/> */}
                 </SwiperSlide>
               )
             })

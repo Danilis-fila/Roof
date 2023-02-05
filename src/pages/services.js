@@ -48,7 +48,7 @@ export default function Services() {
                         return (
                             <div className="services__item" key={data.id} data-scroll="true">
                                 <h2 className="services__item-title">{data.title}</h2>
-                                <Image className="services__item-img" src={data.img} alt="фото мембраны" width={500} height={450} ></Image>
+                                <Image  blurDataURL="/image/loading.svg" placeholder="blur" className="services__item-img" src={data.img} alt="фото мембраны" width={500} height={450} ></Image>
                                 <div className="services__item-desc">{data.description}</div>
                                 <div className="services__item-line"></div>
                             </div>

@@ -20,24 +20,11 @@
   }
   
   &__item {
-    background-color: #000000;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-
-
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  }
-
-  &__item2 {
+    width: auto;
     height: 600px;
-    background-repeat: no-repeat;
     background-position: center;
+    background-repeat: no-repeat;
     background-size: contain;
-
   }
 
   &__close {
