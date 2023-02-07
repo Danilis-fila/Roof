@@ -83,3 +83,16 @@
     font-family: 'Open Sans', sans-serif;
   }
 }
+
+
+@media (max-width: v.$laptop) {
+  .service {
+    padding: 0 15px;
+    margin: 0 0 50px 0;
+
+    &__card {
+      max-width: none;
+      width: 50%;
+    }
+  }
+}

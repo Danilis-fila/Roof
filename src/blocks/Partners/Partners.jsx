@@ -14,11 +14,21 @@ export default function Partners() {
             <h2 className="partners__title">НАШИ ПАРТНЕРЫ</h2>
             <div className="partners__wrapper">
                 <Swiper
-                slidesPerView={4}
-                
-                loop={true}
-                modules={[Autoplay]}
-                autoplay={{ delay: 5000, disableOnInteraction: false}}>
+                    slidesPerView="auto"
+                    loop={true}
+                    modules={[Autoplay]}
+                    autoplay={{ delay: 5000, disableOnInteraction: false}}
+                    breakpoints={{
+                        1025: {
+                            slidesPerView: 4
+                        },
+
+                        768: {
+                            slidesPerView: 3
+                        } 
+                    }}>
+                    
+                    
                     <SwiperSlide>
                         <Image className="partners__card" alt="sika" src='/image/partners/Sika2.svg' width={250} height={65}></Image>
                     </SwiperSlide>

@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 
 export default function Header() {
   const route = useRouter();
+  const [nav, setNav] = useState(false);
 
   const homePageMove = useCallback(() => {
     let header = document.querySelector(".header");
@@ -42,7 +43,7 @@ export default function Header() {
         <div className="header__bottom-panel">
           <div className="header__logo"></div>
           <div className="header__menu">
-            <ul className="header__menu-items">
+            <ul className={nav ? "header__menu-items header__menu-items--active" : "header__menu-items"}>
               <li>
                 <Link href="/" legacyBehavior><a className={`header__menu-item ${route.pathname === '/' ? 'header--active' : ''}`}>ГЛАВНАЯ</a></Link>
               </li>
@@ -58,6 +59,11 @@ export default function Header() {
             </ul>
           </div>
           <a className="header__link-phone" href="tel:+79788099882">ПОЗВОНИТЬ СЕЙЧАС</a>
+          
+          <div className="header__phone-menu" onClick={() => setNav(!nav)}>
+            {nav ? <div>X</div> : <div>===</div>}
+          </div>
+
         </div>
       </div>
     </div>

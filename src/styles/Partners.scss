@@ -38,3 +38,9 @@
         justify-content: center;
     }
 }
+
+@media (max-width: v.$laptop) {
+    .partners {
+      height: 250px;
+    }
+  }

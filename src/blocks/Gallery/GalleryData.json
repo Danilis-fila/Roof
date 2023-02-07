@@ -20,25 +20,25 @@
   {
     "id": 4,
     "image": "/image/photoPVH/pvh8.jpg",
-    "image_array": ["/image/photoPVH/pvh8.jpg", "/image/photoPVH/pvh12.jpg", "/image/photoPVH/pvh9.jpg", "/image/photoPVH/pvh10.jpg"],
+    "image_array": ["/image/photoPVH/pvh8.jpg", "/image/photoPVH/pvh12.jpg", "/image/photoPVH/pvh9.jpg", "/image/photoPVH/pvh11.jpg"],
     "title": "Плоская кровля с зенитными \n фонарями Алупка"
   },
   {
     "id": 5,
-    "image": "/image/photoPVH/pvh26.jpg",
+    "image": "/image/photoPVH/pvh27.jpg",
     "image_array": ["/image/photoPVH/pvh26.jpg", "/image/photoPVH/pvh27.jpg", "/image/photoPVH/pvh28.jpg", "/image/photoPVH/pvh29.jpg", "/image/photoPVH/pvh30.jpg"],
     "title": "Гидроизоляция фасадных кронштейнов"
   },
   {
     "id": 6,
-    "image": "/image/photoPVH/pvh31.jpg",
-    "image_array": ["/image/photoPVH/pvh31.jpg", "/image/photoPVH/pvh32.jpg", "/image/photoPVH/pvh33.jpg", "/image/photoPVH/pvh34.jpg", "/image/photoPVH/pvh35.jpg", "/image/photoPVH/pvh36.jpg", "/image/photoPVH/pvh37.jpg", "/image/photoPVH/pvh38.jpg"],
+    "image": "/image/photoPVH/pvh39.jpg",
+    "image_array": ["/image/photoPVH/pvh39.jpg", "/image/photoPVH/pvh40.jpg", "/image/photoPVH/pvh41.jpg", "/image/photoPVH/pvh34.jpg", "/image/photoPVH/pvh35.jpg", "/image/photoPVH/pvh36.jpg", "/image/photoPVH/pvh37.jpg", "/image/photoPVH/pvh38.jpg"],
     "title": "Реконструкция Ленино"
   },
   {
     "id": 7,
-    "image": "/image/photoPVH/pvh39.jpg",
-    "image_array": ["/image/photoPVH/pvh39.jpg", "/image/photoPVH/pvh40.jpg", "/image/photoPVH/pvh41.jpg"],
+    "image": "/image/photoPVH/pvh31.jpg",
+    "image_array": ["/image/photoPVH/pvh31.jpg"],
     "title": "Дорожки ТЦ зенит"
   }
 ]

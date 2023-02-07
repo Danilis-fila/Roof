@@ -26,6 +26,10 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
     font-family: 'Helios-Medium';
   }
 
+  .home {
+    overflow: hidden;
+  }
+
   body::-webkit-scrollbar {
     width: 5px;               /* ширина scrollbar */
   }
@@ -75,12 +79,10 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
     .is-ready-estimate:nth-child(#{$i}) {
       transform: translateY(0);
       opacity: 1;
-
       transition-duration: 0.6s, 0.6s;
       transition-timing-function: ease-out, ease-out;
       transition-delay: calc(#{$i}s / 10), calc(#{$i}s / 10);
       transition-property: transform, opacity;
-      //transition: transform .6s calc(#{$i}s / 10), opacity .6s calc(#{$i}s / 10) ease-out;
     }
   }
 

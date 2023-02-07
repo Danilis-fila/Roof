@@ -93,3 +93,17 @@
     white-space: pre-wrap;
   }
 }
+
+@media (max-width: v.$laptop) {
+  .gallery {
+    &__wrapper {
+      justify-content: center;
+      
+    }
+
+    &__item {
+      width: 320px;
+    }
+
+  }
+}
