@@ -12,6 +12,11 @@
   &--active {
     color: v.$color-orange!important;
   }
+
+  &--active-404 {
+    display: none;
+  }
+  
   
   &__top-line {
     width: 100%;

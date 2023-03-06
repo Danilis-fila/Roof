@@ -4,6 +4,10 @@
     width: 100%;
     background-color: #DFCEBC;
 
+    &--active-404 {
+        display: none;
+    }
+
     &__wrapper {
         padding: 30px 10%;
     }

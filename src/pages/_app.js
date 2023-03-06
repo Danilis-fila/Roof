@@ -17,6 +17,7 @@ import '../styles/Slider.scss';
 import '../styles/Services.scss';
 import '../styles/Gallery.scss';
 import '../styles/PopupGallery.scss';
+import '../styles/NotFoundPage.scss';
 
 // document.addEventListener('DOMContentLoaded', function(event) {
 //   console.log('DOMContentLoaded before class:');
