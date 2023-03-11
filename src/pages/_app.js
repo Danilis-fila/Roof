@@ -2,14 +2,14 @@ import React, { useEffect, useCallback } from 'react';
 import NextNProgress from 'nextjs-progressbar';
 
 import Header from '@/blocks/Header/Header';
-import Footer from '@/blocks/Footer/Footer';
+import Footer2 from '@/blocks/Footer/Footer2';
 
 import '@/styles/globals.scss';
 import '../styles/about_the_company.scss';
 import '../styles/contacts.scss';
 import '../styles/AboutUs.scss';
 import '../styles/Estimate.scss';
-import '../styles/Footer.scss';
+import '../styles/Footer2.scss';
 import '../styles/Header.scss';
 import '../styles/Partners.scss';
 import '../styles/Service.scss';
@@ -57,7 +57,7 @@ export default function App({ Component, pageProps }) {
       <NextNProgress color='#FE8702' startPosition={1}/>
       <Header/>
       <Component {...pageProps} />
-      <Footer/>
+      <Footer2/>
     </>
   )
 }

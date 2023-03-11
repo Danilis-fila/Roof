@@ -1,3 +1,4 @@
+@use '../modules/variables' as v;
 
 .slider {
     width: 100%;
@@ -100,63 +101,25 @@
     }
 }
 
-// .slider {
-//     width: 100%;
-//     height: calc(100vh - 64px - 36px - 15px);
-//     margin-top: 100px;
+@media (max-width: v.$laptop) {
+    .slider {
+        &__slite-title {
+            font-size: 24px;
+            text-align: center;
+            margin: 0 25px;
+        }
+    }
+}
 
-//     &__slide {
-//         width: 100%;
-//         height: 100%;
-//         background-size: cover;
-//         background-repeat: no-repeat;
-//         display: flex;
-//         justify-content: center;
-//         align-items: center;
-//         min-width: 0; 
-//     }
+@media (max-width: v.$tablet) {
+    .slider {
+        margin-top: 50px;
+        height: calc(100vh - 50px);
+    }
+}
 
-//     &__slide-external {
-//         position: relative;
-//         left: 0;
-//         right: 0;
-//         width: 100%;
-//         height: 100%;
-//         background-color: black;
-//         opacity: .4;
-//     }
-
-//     &__slite-title {
-//         position: absolute;
-//         display: flex;
-//         justify-content: center;
-//         font-size: 34px;
-//         margin: 0 0 10px 0;
-//         font-family: 'Helios-Bold';
-//         z-index: 1;
-//     }
-
-//     &__slite-description {
-//         position: absolute;
-//         margin-top: 50px;
-//         display: flex;
-//         justify-content: center;
-//         font-size: 16px;
-//     }
-// }
-
-// .swiper {
-//     height: 100%;
-// }
-
-// .swiper-pagination-bullet {
-//     width: 10px!important;
-//     height: 10px!important;
-//     opacity: 1!important;
-//     background-color: transparent!important;
-//     border: 2px solid #fff!important;
-// }
-
-// .swiper-pagination-bullet-active {
-//     background-color: #fff!important;
-// }
+@media (max-width: 447px) {
+    .slider {
+        width: calc(100% - 10px);
+    }
+}

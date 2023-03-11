@@ -41,7 +41,7 @@ export default function Header() {
 
       <div className="header__bottom-line">
         <div className="header__bottom-panel">
-          <div className="header__logo"></div>
+          <div className="header__logo"></div> 
           <div className="header__menu">
             <ul className={nav ? "header__menu-items header__menu-items--active" : "header__menu-items"}>
               <li>
@@ -61,7 +61,7 @@ export default function Header() {
           <a className="header__link-phone" href="tel:+79788099882">ПОЗВОНИТЬ СЕЙЧАС</a>
           
           <div className="header__phone-menu" onClick={() => setNav(!nav)}>
-            {nav ? <div>X</div> : <div>===</div>}
+            {nav ? <div className="header__phone-btnClose" /> : <div className="header__phone-btnMenu" />}
           </div>
 
         </div>

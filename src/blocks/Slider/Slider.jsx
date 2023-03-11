@@ -32,31 +32,3 @@ export default function Slider() {
         </div>
     )
   }
-  
-
-
-
-//   <Swiper
-//             spaceBetween={0}
-//             effect='fade'
-//             onSlideChange={() =>  console.log('slide change') }
-//             onSwiper={(swiper) => console.log(swiper)}
-//             modules={[Pagination, EffectFade]}
-//             pagination={{ clickable: true }}
-//             simulateTouch={false}
-//             speed={2000}
-//             >
-//                 {
-//                     sliderData.map(data => {
-//                     return (
-//                         <SwiperSlide key={data.id} >
-//                             <div className="slider__slide"  style={{backgroundImage: `url(${data.sliderURL})`}}> 
-//                                 <div className="slider__slide-external"></div>
-//                                 <div className="slider__slite-title">{data.sliderTitle}</div>
-//                                 <div className="slider__slite-description">{data.sliderDescription}</div>
-//                             </div> 
-//                         </SwiperSlide>
-//                         )
-//                     })
-//                 }
-//             </Swiper>
