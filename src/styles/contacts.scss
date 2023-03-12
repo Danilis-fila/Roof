@@ -131,6 +131,8 @@
 
 @media (max-width: v.$tablet) {
   .contacts {
+    margin-bottom: 30px;
+    
     &__title {
       margin-top: 100px;
     }

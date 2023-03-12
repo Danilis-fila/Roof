@@ -15,7 +15,7 @@ export default function Header() {
         header?.classList?.remove('header--is-scroll')
     }
   }, []);
-
+ 
   useEffect(() => {
       window.addEventListener("scroll", homePageMove);
       homePageMove();
@@ -43,25 +43,26 @@ export default function Header() {
         <div className="header__bottom-panel">
           <div className="header__logo"></div> 
           <div className="header__menu">
+          <div className={nav ? "header__bg--active" : "header__bg"}></div>
             <ul className={nav ? "header__menu-items header__menu-items--active" : "header__menu-items"}>
-              <li>
+              <li className="header__menu-li" onClick={() => setNav(!nav)}>
                 <Link href="/" legacyBehavior><a className={`header__menu-item ${route.pathname === '/' ? 'header--active' : ''}`}>ГЛАВНАЯ</a></Link>
               </li>
-              <li>
+              <li className="header__menu-li"  onClick={() => setNav(!nav)}>
                 <Link href="/about_the_company" legacyBehavior><a className={`header__menu-item ${route.pathname === '/about_the_company' ? 'header--active' : ''}`}>О КОМПАНИИ</a></Link>
               </li>
-              <li>
+              <li className="header__menu-li"  onClick={() => setNav(!nav)}>
                 <Link href="/services" legacyBehavior><a className={`header__menu-item ${route.pathname === '/services' ? 'header--active' : ''}`}>УСЛУГИ</a></Link>
               </li>
-              <li>
+              <li className="header__menu-li"  onClick={() => setNav(!nav)}>
                 <Link href="/contacts" legacyBehavior><a className={`header__menu-item ${route.pathname === '/contacts' ? 'header--active' : ''}`}>КОНТАКТЫ</a></Link>
               </li>
             </ul>
           </div>
-          <a className="header__link-phone" href="tel:+79788099882">ПОЗВОНИТЬ СЕЙЧАС</a>
+          <a className={nav ? "header__link-phone header__link-phone--active" : "header__link-phone"} href="tel:+79788099882">ПОЗВОНИТЬ СЕЙЧАС</a>
           
           <div className="header__phone-menu" onClick={() => setNav(!nav)}>
-            {nav ? <div className="header__phone-btnClose" /> : <div className="header__phone-btnMenu" />}
+            {nav ? <div  className="header__phone-btnClose" /> : <div className="header__phone-btnMenu" />}
           </div>
 
         </div>

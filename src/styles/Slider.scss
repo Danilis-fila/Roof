@@ -114,12 +114,12 @@
 @media (max-width: v.$tablet) {
     .slider {
         margin-top: 50px;
-        height: calc(100vh - 50px);
+        //height: calc(100vh - 50px);
     }
 }
 
 @media (max-width: 447px) {
     .slider {
-        width: calc(100% - 10px);
+        //width: calc(100% - 10px);
     }
 }

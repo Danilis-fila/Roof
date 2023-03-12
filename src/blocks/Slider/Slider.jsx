@@ -13,7 +13,7 @@ export default function Slider() {
             {
                 sliderData.map((slide, index) => {
                     return(
-                        <div className={`slider__slide ${currSlide === index ? 'slider__slide--active' : ''}`} key={index}  style={{backgroundImage: `url(${slide.img})`}}> 
+                        <div className={`slider__slide ${currSlide === index ? 'slider__slide--active' : ''}`} key={index} onClick={() => setCurrSlide((index + 1) % 4)}  style={{backgroundImage: `url(${slide.img})`}}> 
                             <div className="slider__slide-external">
                                 <div className="slider__slite-title">{slide.sliderTitle}</div>
                                 <div className="slider__slite-description">{slide.sliderDescription}</div>
