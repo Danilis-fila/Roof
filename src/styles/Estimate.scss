@@ -11,6 +11,8 @@
     font-size: 34px;
     font-weight: 600;
     margin-top: 10px;
+    padding: 0 20px;
+    text-align: center;
   }
 
   &__description {
@@ -19,6 +21,8 @@
     justify-content: center;
     margin-top: 40px;
     font-size: 20px;
+    padding: 0 20px;
+    text-align: center;
   }
 
   &__icons {
@@ -104,4 +108,23 @@
 		transform: scale(1.5);
 		opacity: 0;
 	}
+}
+
+@media (max-width: v.$laptop) {
+  .estimate {
+    &__icons {
+      padding: 0;
+    }
+  }
+}
+
+@media (max-width: v.$tablet) {
+  .estimate {
+    margin: 0 0 30px 0;
+
+    &__icons {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
 }

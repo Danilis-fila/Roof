@@ -19,12 +19,14 @@ export default function Partners() {
                     modules={[Autoplay]}
                     autoplay={{ delay: 5000, disableOnInteraction: false}}
                     breakpoints={{
-                        1025: {
+                        1600: {
                             slidesPerView: 4
                         },
-
-                        768: {
+                        1200: {
                             slidesPerView: 3
+                        },
+                        768: {
+                            slidesPerView: 2
                         } 
                     }}>
                     

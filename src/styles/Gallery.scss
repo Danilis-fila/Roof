@@ -8,6 +8,7 @@
     //padding: 0 10%;
     display: flex;
     flex-wrap: wrap;
+    
   }
 
   &__item {
@@ -94,7 +95,31 @@
   }
 }
 
+@media (max-width: 1500px) {
+  .gallery {
+    &__item {
+      width: 33.3%;
+    }
+
+  }
+}
+
 @media (max-width: v.$laptop) {
+  .gallery {
+    &__item {
+      width: 50%;
+    }
+
+  }
+}
+
+@media (max-width: v.$tablet) {
+  .gallery {
+    margin: 0 0 30px 0;
+  }
+}
+
+@media (max-width: 700px) {
   .gallery {
     &__wrapper {
       justify-content: center;
@@ -102,7 +127,7 @@
     }
 
     &__item {
-      width: 320px;
+      width: 100%;
     }
 
   }

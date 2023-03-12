@@ -84,15 +84,29 @@
   }
 }
 
+@media (max-width: 1300px) {
+  .service {
+    padding: 0 5%;
+  }
+}
 
 @media (max-width: v.$laptop) {
   .service {
-    padding: 0 15px;
+    padding: 0 20px;
     margin: 0 0 50px 0;
 
     &__card {
       max-width: none;
       width: 50%;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .service {
+    &__card {
+      max-width: none;
+      width: 100%;
     }
   }
 }

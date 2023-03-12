@@ -1,8 +1,13 @@
+@use '../modules/variables' as v;
+
 .contacts {
   margin: 0 0 80px 0;
+  display: flex;
+  flex: 1 0 auto;
 
   &__wrapper {
     padding: 0 10%;
+    width: 100%;
   }
   
   &__title {
@@ -27,7 +32,7 @@
   }
 
   &__elements {
-    width: 50%;
+    width: 40%;
   }
 
   &__element {
@@ -92,8 +97,8 @@
   }
 
   &__map {
-    padding: 0 0 0 50px;
-    width: 50%;
+    padding: 0 0 0 10%;
+    width: 60%;
   }
 }
 
@@ -110,4 +115,37 @@
 
 .ymaps-2-1-79-ruler__dist, .ymaps-2-1-79-listbox__button-text, .ymaps-2-1-79-listbox__list-item-text {
   color: #000;
+}
+
+@media (max-width: v.$laptop) {
+  .contacts {
+    &__title {
+      margin-top: 140px;
+    }
+
+    &__wrapper {
+      padding: 0 15px;
+    }
+  }
+}
+
+@media (max-width: v.$tablet) {
+  .contacts {
+    &__title {
+      margin-top: 100px;
+    }
+
+    &__inner {
+      flex-direction: column;
+    }
+
+    &__elements {
+      width: 100%;
+    } 
+
+    &__map {
+      padding: 0;
+      width: 100%;
+    }
+  }
 }
