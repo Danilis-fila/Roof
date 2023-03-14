@@ -54,10 +54,11 @@
     }
 
     &:nth-child(3) a {
-      background-image: url("/image/footer2/Instagram.svg");
+      background-image: url("/image/footer2/telegram.svg");
       transition: background-image .5s ease;
+      background-position-x: -1px;
       &:hover {
-        background-image: url("/image/footer2/Instagram-active.svg");
+        background-image: url("/image/footer2/telegram-active.svg");
       }
     }
   }

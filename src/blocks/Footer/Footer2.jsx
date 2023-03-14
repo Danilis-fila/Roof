@@ -7,13 +7,13 @@ export default function Footer2() {
     <div className="footer2">
         <div className="footer2__wrapper">
             <div className="footer2__follow">
-                <a href="" className="footer2__img"></a>
+                <a href="https://viber.click/79787349962" target="_blank" className="footer2__img"></a>
             </div>
             <div className="footer2__follow">
-                <a href="" className="footer2__img"></a>
+                <a href="https://api.whatsapp.com/send?phone=79788099882" target="_blank" className="footer2__img"></a>
             </div>
             <div className="footer2__follow">
-                <a href="" className="footer2__img"></a>
+                <a href="https://t.me/+79788099882" target="_blank" className="footer2__img"></a>
             </div>
         </div>
         <div className="footer2__menu">

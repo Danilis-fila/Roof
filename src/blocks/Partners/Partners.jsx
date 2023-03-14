@@ -46,6 +46,15 @@ export default function Partners() {
                     <SwiperSlide>
                         <Image className="partners__card" alt="plastfoil" src='/image/partners/Plastfoil.jpg' width={250} height={65}></Image>
                     </SwiperSlide>
+                    <SwiperSlide>
+                        <Image className="partners__card" alt="penoplex" src='/image/partners/penoplex.png' width={250} height={65}></Image>
+                    </SwiperSlide>
+                    <SwiperSlide style={{display: "flex", alignItems: "center"}}>
+                        <Image className="partners__card" alt="Herz" src='/image/partners/HERZ.png' width={250} height={52}></Image>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <Image className="partners__card" alt="Ritmo" src='/image/partners/Ritmo.png' style={{objectFit: "cover"}} width={250} height={65}></Image>
+                    </SwiperSlide>
                 </Swiper>
             </div>
         </div>
