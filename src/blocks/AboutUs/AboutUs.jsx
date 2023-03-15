@@ -41,12 +41,10 @@ export default function AboutUs() {
  
   return (
     <div className="aboutUs" data-scroll>
-
-      <div className="aboutUs__title">О НАС В ЦИФРАХ</div>
-
+      <h2 className="aboutUs__title">О НАС В ЦИФРАХ</h2>
       <div className="aboutUs__wrapper">
         <div className="aboutUs__cell">
-          <p className="aboutUs__text">ВЫПОЛНЕННЫХ ПРОЕКТОВ:</p>
+          <h2 className="aboutUs__text">ВЫПОЛНЕННЫХ ПРОЕКТОВ:</h2>
 
           <div className="aboutUs__number">
             <p className="aboutUs__more aboutUs__more-project aboutUs__number"></p>
@@ -55,7 +53,7 @@ export default function AboutUs() {
         </div> 
 
         <div className="aboutUs__cell">
-          <p className="aboutUs__text">СДЕЛАННОЙ КРОВЛИ:</p>
+          <h2 className="aboutUs__text">СДЕЛАННОЙ КРОВЛИ:</h2>
 
           <div className="aboutUs__number">
             <p className="aboutUs__more aboutUs__more-performed aboutUs__number"></p>
@@ -64,7 +62,7 @@ export default function AboutUs() {
         </div> 
 
         <div className="aboutUs__cell">
-          <p className="aboutUs__text">ЛЕТ НА РЫНКЕ:</p>
+          <h2 className="aboutUs__text">ЛЕТ НА РЫНКЕ:</h2>
 
           <div className="aboutUs__number">
             <p className="aboutUs__more aboutUs__more-years aboutUs__number"></p>

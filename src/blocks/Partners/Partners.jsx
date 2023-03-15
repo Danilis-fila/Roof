@@ -28,9 +28,7 @@ export default function Partners() {
                         768: {
                             slidesPerView: 2
                         } 
-                    }}>
-                    
-                    
+                    }}>                    
                     <SwiperSlide>
                         <Image className="partners__card" blurDataURL="/image/loading.svg" placeholder="blur" alt="sika" src='/image/partners/Sika2.svg' width={250} height={65}></Image>
                     </SwiperSlide>

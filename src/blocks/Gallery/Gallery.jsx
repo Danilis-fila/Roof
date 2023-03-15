@@ -47,7 +47,7 @@ export default function Gallery() {
               return (
                 <a className="gallery__item" gallery-scroll="true" key={data.id}  onClick={() => {setShowModal(true); setArray(data.image_array)}}>
                   <div className="gallery__item-wrapper">
-                    <Image className="gallery__item-img" src={data.image} blurDataURL="/image/loading.svg" alt="Фото мембраны" placeholder="blur" width={500} height={500}/>
+                    <Image className="gallery__item-img" src={data.image} blurDataURL={data.image} quality={100} alt="Фото мембраны" placeholder="blur" width={500} height={500}/>
                   </div>
                   <div className="gallery__item-title">{data.title}</div>
                 </a>

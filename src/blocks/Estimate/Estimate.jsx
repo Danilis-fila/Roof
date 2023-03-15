@@ -31,11 +31,9 @@ export default function Estimate() {
 
   return (
     <div className="estimate" data-scroll>
-        <div className="estimate__description">ГИДРОИЗОЛЯЦИЯ ПЛОСКИХ КРОВЕЛЬ, ТЕРРАС ФУНДАМЕНТОВ, БАССЕЙНОВ</div>
-        <div className="estimate__title">ВЫПОЛНЯЕМ МОНТАЖ ПВХ МЕМБРАНЫ В КРЫМУ</div>
-        
+        <h2 className="estimate__description">ГИДРОИЗОЛЯЦИЯ ПЛОСКИХ КРОВЕЛЬ, ТЕРРАС ФУНДАМЕНТОВ, БАССЕЙНОВ</h2>
+        <h2 className="estimate__title">ВЫПОЛНЯЕМ МОНТАЖ ПВХ МЕМБРАНЫ В КРЫМУ</h2>
         <div className="estimate__icons">
-
           <div className="estimate__icon" estimate-scroll="true">
             <div className="estimate__wrapper">
               <div className="estimate__inner">

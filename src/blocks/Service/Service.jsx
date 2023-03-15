@@ -6,7 +6,7 @@ export default function Service() {
   return (
     <div className="service" data-scroll>
       <h2 className="service__title">УСЛУГИ, КОТОРЫЕ МЫ ПРЕДОСТАВЛЯЕМ</h2>
-      <h3 className="service__title2">Выполняем все виды гидроизоляций из ПВХ или ТПО мембран.</h3>
+      <h2 className="service__title2">Выполняем все виды гидроизоляций из ПВХ или ТПО мембран.</h2>
       <div className="service__cards">
         {
           ServiceData.map(data => {
