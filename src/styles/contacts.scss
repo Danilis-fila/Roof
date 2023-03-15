@@ -5,6 +5,32 @@
   display: flex;
   flex: 1 0 auto;
 
+  &__clipboard {
+    z-index: 30;
+    width: 80%;
+    height: 60px;
+    background-color: #f3b46d;
+    position: fixed;
+    border-radius: 10px;
+    top: 120px;
+    transform: translateY(-300px);
+    transition: transform .6s ease;
+
+    &--active {
+      transform: translateY(0px);
+    }
+  }
+
+  &__clipboard-title {
+    font-size: 18px;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
   &__wrapper {
     padding: 0 10%;
     width: 100%;
@@ -89,11 +115,33 @@
     }
   }
 
-  &__element-desc {
+  &__element-desc, &__element-tel, &__element-email {
     font-family: 'Helios-Medium';
     color: #000;
     font-size: 18px;
     margin: 0 0 10px 0;
+  }
+
+  &__element-tel, &__element-email {
+    display: inline;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #dddbdb;
+    }
+  }
+
+  &__element-tel {
+    position: relative;
+
+    &::after {
+      content: "текст скопирован";
+      display: block;
+      position: absolute;
+      padding: 0 8px;
+      height: 20px;
+      background-color: #dddbdb;
+    }
   }
 
   &__map {
