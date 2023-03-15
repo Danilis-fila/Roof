@@ -32,28 +32,28 @@ export default function Partners() {
                     
                     
                     <SwiperSlide>
-                        <Image className="partners__card" alt="sika" src='/image/partners/Sika2.svg' width={250} height={65}></Image>
+                        <Image className="partners__card" blurDataURL="/image/loading.svg" placeholder="blur" alt="sika" src='/image/partners/Sika2.svg' width={250} height={65}></Image>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Image className="partners__card" alt="leister" src='/image/partners/leister.svg' width={250} height={65}></Image>
+                        <Image className="partners__card" blurDataURL="/image/loading.svg" placeholder="blur" alt="leister" src='/image/partners/leister.svg' width={250} height={65}></Image>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Image className="partners__card" alt="forsthoff" src='/image/partners/forsthoff2.jpg' width={250} height={65}></Image>
+                        <Image className="partners__card" blurDataURL="/image/loading.svg" placeholder="blur" alt="forsthoff" src='/image/partners/forsthoff2.jpg' width={250} height={65}></Image>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Image className="partners__card" alt="technonicol" src='/image/partners/Technonicol2.jpg' width={250} height={65}></Image>
+                        <Image className="partners__card" blurDataURL="/image/loading.svg" placeholder="blur" alt="technonicol" src='/image/partners/Technonicol2.jpg' width={250} height={65}></Image>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Image className="partners__card" alt="plastfoil" src='/image/partners/Plastfoil.jpg' width={250} height={65}></Image>
+                        <Image className="partners__card" blurDataURL="/image/loading.svg" placeholder="blur" alt="plastfoil" src='/image/partners/Plastfoil.jpg' width={250} height={65}></Image>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Image className="partners__card" alt="penoplex" src='/image/partners/penoplex.png' width={250} height={65}></Image>
+                        <Image className="partners__card" blurDataURL="/image/loading.svg" placeholder="blur" alt="penoplex" src='/image/partners/penoplex.png' width={250} height={65}></Image>
                     </SwiperSlide>
                     <SwiperSlide style={{display: "flex", alignItems: "center"}}>
-                        <Image className="partners__card" alt="Herz" src='/image/partners/HERZ.png' width={250} height={52}></Image>
+                        <Image className="partners__card" blurDataURL="/image/loading.svg" placeholder="blur" alt="Herz" src='/image/partners/HERZ.png' style={{height:"52px"}} width={250} height={52}></Image>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Image className="partners__card" alt="Ritmo" src='/image/partners/Ritmo.png' style={{objectFit: "cover"}} width={250} height={65}></Image>
+                        <Image className="partners__card" blurDataURL="/image/loading.svg" placeholder="blur" alt="Ritmo" src='/image/partners/Ritmo.png' style={{objectFit: "cover"}} width={250} height={65}></Image>
                     </SwiperSlide>
                 </Swiper>
             </div>

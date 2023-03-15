@@ -8,25 +8,6 @@ export default function Contacts() {
     zoom: 8
   };
 
-  const copyMessege = () => {
-    const contactsClipboard = document.querySelector('.contacts__clipboard');
-    contactsClipboard.classList.add('contacts__clipboard--active');
-    const interval = setTimeout(()=>{
-      contactsClipboard.classList.remove('contacts__clipboard--active');
-      clearInterval(interval);
-    }, 3000)
-  }
-
-  const copyEmail = () => {
-    navigator.clipboard.writeText(id_contacts_email.textContent);
-    copyMessege();
-  }
-
-  const copyTel = () => {
-    navigator.clipboard.writeText(id_contacts_tel.textContent);
-    copyMessege();
-  }
-
   return (
     <>
       <Head>
@@ -37,11 +18,6 @@ export default function Contacts() {
       </Head>
       <div className="contacts">
         <div className="contacts__wrapper">
-
-          <div className='contacts__clipboard'>
-            <p className='contacts__clipboard-title'>Текст скопирован</p>
-          </div>
-
           <h1 className="contacts__title">КОНТАКТЫ</h1>
           <div className="contacts__inner">
             <div className="contacts__elements">
@@ -52,12 +28,12 @@ export default function Contacts() {
 
               <div className="contacts__element">
                 <div className="contacts__element-title">Телефон, Viber, Whatsapp:</div>
-                <div className="contacts__element-tel" id='id_contacts_tel' onClick={copyTel}>+7(978)809-98-82</div>  
+                <a className="contacts__element-tel" href="tel:+79788099882">+7(978)809-98-82</a>  
               </div>
 
               <div className="contacts__element">
                 <div className="contacts__element-title">E-mail:</div>
-                <a className="contacts__element-email" id='id_contacts_email' href='mailto:crimearoof@gmail.com'>crimearoof@gmail.com</a>  
+                <a className="contacts__element-email" href='mailto:crimearoof@gmail.com'>crimearoof@gmail.com</a>  
               </div>
 
               <div className="contacts__element">
