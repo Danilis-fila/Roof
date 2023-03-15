@@ -41,6 +41,10 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
     border-radius: 0px;       /* закругления плашки */
     border: 3px solid orange;  /* padding вокруг плашки */
   }
+  
+  .body--lock {
+    overflow: hidden;
+  }
 
   @font-face {
     font-family: "Helios-Bold";

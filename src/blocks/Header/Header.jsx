@@ -22,6 +22,11 @@ export default function Header() {
       return () => window.removeEventListener("scroll", homePageMove);
   })
 
+  const clickPhoneMenu = () => {
+    setNav(!nav);
+    const body = document.querySelector(".body").classList.toggle("body--lock");
+  }
+
   return (
     <div className="header">
       <div className="header__top-line">
@@ -61,7 +66,7 @@ export default function Header() {
           </div>
           <a className={nav ? "header__link-phone header__link-phone--active" : "header__link-phone"} href="tel:+79788099882">ПОЗВОНИТЬ СЕЙЧАС</a>
           
-          <div className="header__phone-menu" onClick={() => setNav(!nav)}>
+          <div className="header__phone-menu" onClick={clickPhoneMenu}>
             {nav ? <div  className="header__phone-btnClose" /> : <div className="header__phone-btnMenu" />}
           </div>
 

@@ -209,14 +209,14 @@
       width: 40px;
       height: 40px;
       background-image: url("/image/menu-button.svg");
-      transition: all 1s ease;
+      transition: all .6s ease;
     }
 
     &__phone-btnClose {
       width: 40px;
       height: 40px;
       background-image: url("/image/close-button.svg");
-      transition: all 1s ease;
+      transition: all .6s ease;
     }
 
     &__phone-menu {
