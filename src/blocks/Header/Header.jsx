@@ -50,16 +50,16 @@ export default function Header() {
           <div className="header__menu">
           <div className={nav ? "header__bg--active" : "header__bg"}></div>
             <ul className={nav ? "header__menu-items header__menu-items--active" : "header__menu-items"}>
-              <li className="header__menu-li" onClick={() => setNav(!nav)}>
+              <li className="header__menu-li" onClick={clickPhoneMenu}>
                 <Link href="/" legacyBehavior><a className={`header__menu-item ${route.pathname === '/' ? 'header--active' : ''}`}>ГЛАВНАЯ</a></Link>
               </li>
-              <li className="header__menu-li"  onClick={() => setNav(!nav)}>
+              <li className="header__menu-li"  onClick={clickPhoneMenu}>
                 <Link href="/about_the_company" legacyBehavior><a className={`header__menu-item ${route.pathname === '/about_the_company' ? 'header--active' : ''}`}>О КОМПАНИИ</a></Link>
               </li>
-              <li className="header__menu-li"  onClick={() => setNav(!nav)}>
+              <li className="header__menu-li"  onClick={clickPhoneMenu}>
                 <Link href="/services" legacyBehavior><a className={`header__menu-item ${route.pathname === '/services' ? 'header--active' : ''}`}>УСЛУГИ</a></Link>
               </li>
-              <li className="header__menu-li"  onClick={() => setNav(!nav)}>
+              <li className="header__menu-li"  onClick={clickPhoneMenu}>
                 <Link href="/contacts" legacyBehavior><a className={`header__menu-item ${route.pathname === '/contacts' ? 'header--active' : ''}`}>КОНТАКТЫ</a></Link>
               </li>
             </ul>
