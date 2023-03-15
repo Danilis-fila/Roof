@@ -11,11 +11,9 @@ import 'swiper/css/scrollbar';
 
 
 export default function PopupGallery({active, onClose, gallery}) {
-
   if(!active) {
     return null;
   }
-
   return (
     <div className="popupGallery" onClick={onClose}>
       <div className="popupGallery__close" onClick={onClose}></div>

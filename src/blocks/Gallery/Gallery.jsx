@@ -7,8 +7,10 @@ import galleryData from "./GalleryData";
 export default function Gallery() {
   const [showModal, setShowModal] = useState(false);
   const [array, setArray] = useState([]);
+
   const closePopup = () => {
     setShowModal(false);
+    document.querySelector(".body").classList.remove("body--lock");
   }
 
   const galleryScroll = useCallback(() => {
@@ -41,11 +43,12 @@ export default function Gallery() {
   return (
       <div className="gallery">
         <div className="gallery__wrapper">
-
           {
             galleryData.map(data => {
               return (
-                <a className="gallery__item" gallery-scroll="true" key={data.id}  onClick={() => {setShowModal(true); setArray(data.image_array)}}>
+                <a className="gallery__item" gallery-scroll="true" key={data.id}  onClick={() => {document.querySelector(".body").classList.add("body--lock");
+                  setShowModal(true); setArray(data.image_array)}}>
+
                   <div className="gallery__item-wrapper">
                     <Image className="gallery__item-img" src={data.image} blurDataURL={data.image} quality={100} alt="Фото мембраны" placeholder="blur" width={500} height={500}/>
                   </div>
@@ -54,7 +57,6 @@ export default function Gallery() {
               )
             })
           }
-          
           <PopupGallery active={showModal} onClose={closePopup} gallery={array}/>
         </div>
       </div>  
