@@ -15,7 +15,7 @@ export default function Slider() {
                 sliderData.map((slide, index) => {
                     return(
                         <div className={`slider__slide ${currSlide === index ? 'slider__slide--active' : ''}`} key={index} onClick={() => setCurrSlide((index + 1) % 4)}> 
-                            <Image className="slider__slide-img" blurDataURL={slide.img} quality={100} placeholder="blur" loading="eager" src={slide.img} alt={slide.sliderTitle} height={4000} width={4000}/>
+                            <Image className="slider__slide-img" blurDataURL={slide.img} quality={100} placeholder="blur" loading="eager" src={slide.img} alt={slide.sliderTitle} height={1500} width={2500}/>
                             <div className="slider__slide-external">
                                 <div className="slider__slite-title">{slide.sliderTitle}</div>
                                 <div className="slider__slite-description">{slide.sliderDescription}</div>
