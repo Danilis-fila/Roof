@@ -39,7 +39,7 @@ export default function Contacts() {
 
               <div className="contacts__element">
                 <div className="contacts__element-title">Режим работы:</div>
-                <div className="contacts__element-desc">пн–сб: 08:00–19:00 вс: выходной</div>  
+                <div className="contacts__element-desc">пн–сб: 9:00–19:00 вс: выходной</div>  
               </div>
             </div>
 

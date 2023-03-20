@@ -38,7 +38,7 @@ export default function Header() {
         <div className="header__top-panel">
 
           <div className="header__working-hours">
-            <div className="header__shedule">пн–сб: 8:00–18:00</div>
+            <div className="header__shedule">пн–сб: 9:00–19:00</div>
             <div>вс: выходной</div>
           </div>
 
