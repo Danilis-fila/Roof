@@ -3,7 +3,7 @@
 .contacts {
   margin: 0 0 80px 0;
   display: flex;
-  flex: 1 0 auto;
+  min-height: calc(100vh - 279px);
 
   &__wrapper {
     padding: 0 10%;
@@ -15,7 +15,7 @@
     line-height: 1.1;
     margin-bottom: 30px;
     font-family: 'Helios-Bold';
-    color: #000;
+    color: #000000;
     margin-top: 100px + 55px;
   
     &::after {
