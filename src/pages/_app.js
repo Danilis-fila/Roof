@@ -58,6 +58,7 @@ export default function App({ Component, pageProps }) {
       <Head>
         <link rel="preconnect" href="https://crimea-roof.ru" />
         <link rel="dns-prefetch" href="https://crimea-roof.ru" />
+        <meta name="google-site-verification" content="W1qQiOpaHsnbmgRPXhUXTF3f_4SbF1zKBKZLKfvfMnI" />
       </Head>
       <NextNProgress color='#FE8702' startPosition={1}/>
       <Header/>
