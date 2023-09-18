@@ -18,6 +18,7 @@ import '../styles/Services.scss';
 import '../styles/Gallery.scss';
 import '../styles/PopupGallery.scss';
 import '../styles/NotFoundPage.scss';
+import Head from 'next/head';
 
 // document.addEventListener('DOMContentLoaded', function(event) {
 //   console.log('DOMContentLoaded before class:');
@@ -54,6 +55,10 @@ export default function App({ Component, pageProps }) {
 
   return (
     <>
+      <Head>
+        <link rel="preconnect" href="https://crimea-roof.ru" />
+        <link rel="dns-prefetch" href="https://crimea-roof.ru" />
+      </Head>
       <NextNProgress color='#FE8702' startPosition={1}/>
       <Header/>
       <Component {...pageProps} />
