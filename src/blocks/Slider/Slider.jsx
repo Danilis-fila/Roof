@@ -17,7 +17,7 @@ export default function Slider() {
                         <div className={`slider__slide ${currSlide === index ? 'slider__slide--active' : ''}`} key={index} onClick={() => setCurrSlide((index + 1) % 4)}> 
                             <Image className="slider__slide-img" 
                             blurDataURL={slide.img} 
-                            // quality={100} 
+                            quality={80} 
                             // placeholder="blur" 
                             // loading="eager" 
                             src={slide.img} 

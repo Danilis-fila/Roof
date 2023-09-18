@@ -14,7 +14,7 @@ export default function Service() {
               <div className="service__card" key={data.id} data-scroll>
                 <div className="service__card-wrapper">
                   <div className="service__card-img">
-                    <Image  src={data.img} alt="Иконка услуги" width={500} height={500}/>
+                    <Image  src={data.img} alt="Иконка услуги"  quality={80}  width={500} height={500}/>
                   </div>
                   <div className="service__card-title">{data.title}</div>
                   <div className="service__card-desc">{data.description}</div>
