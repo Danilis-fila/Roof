@@ -46,9 +46,8 @@ export default function Gallery() {
           {
             galleryData.map(data => {
               return (
-                <a className="gallery__item" gallery-scroll="true" key={data.id}  onClick={() => {document.querySelector(".body").classList.add("body--lock");
+                <a href="#" className="gallery__item" gallery-scroll="true" key={data.id}  onClick={() => {document.querySelector(".body").classList.add("body--lock");
                   setShowModal(true); setArray(data.image_array)}}>
-
                   <div className="gallery__item-wrapper">
                     <Image className="gallery__item-img" src={data.image} blurDataURL={data.image}  quality={80}  alt="Фото мембраны" placeholder="blur" width={500} height={500}/>
                   </div>

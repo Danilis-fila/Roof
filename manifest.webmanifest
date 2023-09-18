@@ -1,0 +1,18 @@
+{
+  "name": "Крым-Кровля",
+  "lang": "ru",
+  "short_name": "КрымКровля",
+  "description": "Сайт для приобретения услуг по мягкой кровли",
+  "start_url": "/",
+  "scope": "/404",
+  "display": "standalone",
+  "theme_color": "#FE8702",
+  "background_color": "#BD5901",
+  "orientation": "any",
+  "icons": [
+      {
+          "src": "/public/image/logo-roof.svg",
+          "sizes": "512x512"
+      }
+  ]
+}
