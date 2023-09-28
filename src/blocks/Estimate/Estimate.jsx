@@ -6,7 +6,6 @@ export default function Estimate() {
     const animateElements = document.querySelectorAll('[estimate-scroll]');
     animateElements.forEach((element) => {
         const rect = element.getBoundingClientRect();
-        // if(rect === null) animateElements = document.querySelectorAll('[estimate-scroll]');
         const win = window.innerHeight - rect.top;
         if (win > -70) {
             element.classList.add('is-ready-estimate')

@@ -30,28 +30,28 @@ export default function Partners() {
                         } 
                     }}>                    
                     <SwiperSlide>
-                        <Image className="partners__card" blurDataURL="/image/loading.svg" placeholder="blur"  alt="sika" src='/image/partners/Sika2.svg'  quality={80}  width={250} height={65}></Image>
+                        <Image className="partners__card" placeholder="blur" blurDataURL="/image/Крым-Кровля-Blur.png"  alt="sika" src='/image/partners/Sika2.svg'  quality={80}  width={250} height={65}></Image>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Image className="partners__card" blurDataURL="/image/loading.svg" placeholder="blur" alt="leister" src='/image/partners/leister.svg'  quality={80}  width={250} height={65}></Image>
+                        <Image className="partners__card" placeholder="blur" blurDataURL="/image/Крым-Кровля-Blur.png" alt="leister" src='/image/partners/leister.svg'  quality={80}  width={250} height={65}></Image>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Image className="partners__card" blurDataURL="/image/loading.svg" placeholder="blur" alt="forsthoff" src='/image/partners/forsthoff2.jpg'  quality={80}  width={250} height={65}></Image>
+                        <Image className="partners__card" placeholder="blur" blurDataURL="/image/Крым-Кровля-Blur.png" alt="forsthoff" src='/image/partners/forsthoff2.jpg'  quality={80}  width={250} height={65}></Image>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Image className="partners__card" blurDataURL="/image/loading.svg" placeholder="blur" alt="technonicol" src='/image/partners/Technonicol2.jpg'  quality={80}  width={250} height={65}></Image>
+                        <Image className="partners__card" placeholder="blur" blurDataURL="/image/Крым-Кровля-Blur.png" alt="technonicol" src='/image/partners/Technonicol2.jpg'  quality={80}  width={250} height={65}></Image>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Image className="partners__card" blurDataURL="/image/loading.svg" placeholder="blur" alt="plastfoil" src='/image/partners/Plastfoil.jpg'  quality={80}  width={250} height={65}></Image>
+                        <Image className="partners__card" placeholder="blur" blurDataURL="/image/Крым-Кровля-Blur.png" alt="plastfoil" src='/image/partners/Plastfoil.jpg'  quality={80}  width={250} height={65}></Image>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Image className="partners__card" blurDataURL="/image/loading.svg" placeholder="blur" alt="penoplex" src='/image/partners/penoplex.png'  quality={80}  width={250} height={65}></Image>
+                        <Image className="partners__card" placeholder="blur" blurDataURL="/image/Крым-Кровля-Blur.png" alt="penoplex" src='/image/partners/penoplex.png'  quality={80}  width={250} height={65}></Image>
                     </SwiperSlide>
                     <SwiperSlide style={{display: "flex", alignItems: "center"}}>
-                        <Image className="partners__card" blurDataURL="/image/loading.svg" placeholder="blur" alt="Herz" src='/image/partners/HERZ.png'  quality={80}  style={{height:"52px"}} width={250} height={52}></Image>
+                        <Image className="partners__card" placeholder="blur" blurDataURL="/image/Крым-Кровля-Blur.png" alt="Herz" src='/image/partners/HERZ.png'  quality={80}  style={{height:"52px"}} width={250} height={52}></Image>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Image className="partners__card" blurDataURL="/image/loading.svg" placeholder="blur" alt="Ritmo" src='/image/partners/Ritmo.png'  quality={80}  style={{objectFit: "cover"}} width={250} height={65}></Image>
+                        <Image className="partners__card" placeholder="blur" blurDataURL="/image/Крым-Кровля-Blur.png" alt="Ritmo" src='/image/partners/Ritmo.png'  quality={80}  style={{objectFit: "cover"}} width={250} height={65}></Image>
                     </SwiperSlide>
                 </Swiper>
             </div>

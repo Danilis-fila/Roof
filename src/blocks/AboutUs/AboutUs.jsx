@@ -1,4 +1,4 @@
-import React, { useEffect, useCallback, useState } from "react";
+import React, { useEffect, useMemo } from "react";
 
 export default function AboutUs() {
   //const[runningNumber, setRunningNumber] = useState(true);

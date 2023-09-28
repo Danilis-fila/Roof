@@ -5,7 +5,6 @@ import Image from "next/image";
 export default function Slider() {
 
   const [currSlide, setCurrSlide] = useState(0);
-
   useEffect(() => setCurrSlide(0),[]);
 
   return (
@@ -16,15 +15,14 @@ export default function Slider() {
                     return(
                         <div className={`slider__slide ${currSlide === index ? 'slider__slide--active' : ''}`} key={index} onClick={() => setCurrSlide((index + 1) % 4)}> 
                             <Image className="slider__slide-img" 
-                            blurDataURL={slide.img} 
-                            quality={80} 
-                            // placeholder="blur" 
-                            // loading="eager" 
-                            src={slide.img} 
-                            alt={slide.sliderTitle} 
-                            height={1500} 
-                            width={2500}
-                            priority
+                                priority
+                                quality={80} 
+                                placeholder="blur"
+                                blurDataURL="/image/Крым-Кровля-Blur.png"
+                                loading="eager" 
+                                src={slide.img} 
+                                alt={slide.sliderTitle} 
+                                fill
                             />
                             <div className="slider__slide-external">
                                 <div className="slider__slite-title">{slide.sliderTitle}</div>
