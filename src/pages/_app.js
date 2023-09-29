@@ -30,7 +30,6 @@ export default function App({ Component, pageProps }) {
     const animateElements = document.querySelectorAll('[data-scroll]');
     animateElements.forEach((element) => {
       const rect = element.getBoundingClientRect();
-      // if(rect === null) animateElements = document.querySelectorAll('[data-scroll]');
       const win = window.innerHeight - rect.top;
       if (win > 0) {
           element.classList.add('is-ready')
@@ -56,8 +55,8 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <Head>
-      <meta name="description" content="Крым-Кровля, Контактное лицо, Телефон, Telegram, Viber, WhatsApp, Контакты, "/>
-      <meta name="keywords" content="ООО Крым Кровля, ООО Крым-Кровля, ООО крым кровля, 
+        <meta name="description" content="Крым-Кровля, Контактное лицо, Телефон, Telegram, Viber, WhatsApp, Контакты, "/>
+        <meta name="keywords" content="ООО Крым Кровля, ООО Крым-Кровля, ООО крым кровля, 
                                крым кровля, Крым кровля, Крым Кровля, 
                                крым кровля Симферополь, Крым кровля Симферополь, Крым Кровля Симферополь,"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -66,6 +65,12 @@ export default function App({ Component, pageProps }) {
         <link rel="dns-prefetch" href="https://crimea-roof.ru" />
         <meta name="google-site-verification" content="W1qQiOpaHsnbmgRPXhUXTF3f_4SbF1zKBKZLKfvfMnI" />
         <link rel="preload" href="public/fonts/HeliosCondC-Bold-webfont.ttf" as="font" type="font/woff2" crossOrigin='anonymous'></link>
+     
+        <meta property="og:image" content="<generated>" />
+        <meta property="og:image:type" content="<generated>" />
+        <meta property="og:image:width" content="<generated>" />
+        <meta property="og:image:height" content="<generated>" />     
+     
       </Head>
       <NextNProgress color='#FE8702' startPosition={1}/>
       <Header/>
