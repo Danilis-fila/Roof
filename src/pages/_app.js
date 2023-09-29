@@ -61,6 +61,7 @@ export default function App({ Component, pageProps }) {
                                крым кровля Симферополь, Крым кровля Симферополь, Крым Кровля Симферополь,"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <link rel="icon" href="image/logo-roof.svg"/>
+        
         <link rel="preconnect" href="https://crimea-roof.ru" />
         <link rel="dns-prefetch" href="https://crimea-roof.ru" />
         <meta name="google-site-verification" content="W1qQiOpaHsnbmgRPXhUXTF3f_4SbF1zKBKZLKfvfMnI" />
