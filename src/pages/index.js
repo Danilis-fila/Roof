@@ -30,10 +30,10 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <link rel="icon" href="image/logo-roof.svg"/>
 
-        <head prefix="my_namespace: https://example.com/ns#"/>
+       
         <meta property="og:title" content="ООО Крым-Кровля123" />
         <meta property="og:description" content="Сайт фирмы ООО Крым-Кровля" />
-        <meta property="og:image" content="image" />
+        <meta property="og:image" content="image/photo1.png" />
         <meta property="og:image:alt" content="Logo Crimea-roof" />
         <meta property="og:image:type" content="image/photo1.png" />
         <meta property="og:image:width" content="400" />
