@@ -31,13 +31,18 @@ export default function Home() {
         <link rel="icon" href="image/logo-roof.svg"/>
 
        
-        <meta property="og:title" content="ООО Крым-Кровля123" />
+        {/* <meta property="og:title" content="ООО Крым-Кровля123" />
         <meta property="og:description" content="Сайт фирмы ООО Крым-Кровля" />
         <meta property="og:image" content="image/photo1.png" />
         <meta property="og:image:alt" content="Logo Crimea-roof" />
         <meta property="og:image:type" content="image/photo1.png" />
         <meta property="og:image:width" content="400" />
-        <meta property="og:image:height" content="300" />
+        <meta property="og:image:height" content="300" /> */}
+
+        <meta property="og:image" content="<generated>" />
+        <meta property="og:image:type" content="<generated>" />
+        <meta property="og:image:width" content="<generated>" />
+        <meta property="og:image:height" content="<generated>" />
       </Head>
       <div className="home">
         <Slider/>
