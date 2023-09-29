@@ -5,7 +5,7 @@ export default function AboutTheCompany() {
   return (
     <>
       <Head>
-        <title>Крым Кровля | О компании</title>
+        <meta name="title" content="Крым Кровля | О компании"/>
         <meta name="description" content="Наша кровля в Симферополе, Севастополе, Ялте, Алуште, Керчи, Крыму"/>
         <meta name="keywords" content="ООО Крым Кровля, ООО Крым-Кровля, ООО крым кровля, 
                                крым кровля, Крым кровля, Крым Кровля, 

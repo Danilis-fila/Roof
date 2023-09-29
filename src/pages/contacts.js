@@ -11,7 +11,7 @@ export default function Contacts() {
   return (
     <>
       <Head>
-        <title>Крым Кровля | Контакты</title>
+        <meta name="title" content="Крым Кровля | Контакты"/>
         <meta name="description" content="Крым-Кровля, Контактное лицо, Телефон, Telegram, Viber, WhatsApp, Контакты"/>
         <meta name="keywords" content="ООО Крым Кровля, ООО Крым-Кровля, ООО крым кровля, 
                                крым кровля, Крым кровля, Крым Кровля, 

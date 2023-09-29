@@ -34,7 +34,7 @@ export default function Services() {
   return (
     <>
       <Head>
-        <title>Крым-Кровля | Услуги</title>
+        <meta name="title" content="Крым-Кровля | Услуги"/>
         <meta name="description" content="Огромный выбор услуг по эксплуатации мягкой кровли в Крыму. Услуги по эксплуатации мягкой кровли"/>
         <meta name="keywords" content="ООО Крым Кровля, ООО Крым-Кровля, ООО крым кровля, 
                                крым кровля, Крым кровля, Крым Кровля, 
