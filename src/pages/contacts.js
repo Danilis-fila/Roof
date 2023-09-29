@@ -20,7 +20,7 @@ export default function Contacts() {
         <link rel="icon" href="image/logo-roof.svg"/>
 
         <meta property="og:url" content="https://crimea-roof.ru/"/>
-        <meta property="og:title" content="ООО Крым-Кровля"/>
+        <meta property="og:title" content="ООО Крым-Кровля | Контакты"/>
         <meta property="og:description" content="Крым-Кровля, Контактное лицо, Телефон, Telegram, Viber, WhatsApp, Контакты"/>
         <meta property="og:image" content="https://crimea-roof.ru/_next/image?url=%2Fimage%2FphotoPVH%2Fpvh8.jpg&w=2048&q=80"/>
       </Head>
