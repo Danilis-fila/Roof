@@ -64,13 +64,7 @@ export default function App({ Component, pageProps }) {
         <link rel="preconnect" href="https://crimea-roof.ru" />
         <link rel="dns-prefetch" href="https://crimea-roof.ru" />
         <meta name="google-site-verification" content="W1qQiOpaHsnbmgRPXhUXTF3f_4SbF1zKBKZLKfvfMnI" />
-        <link rel="preload" href="public/fonts/HeliosCondC-Bold-webfont.ttf" as="font" type="font/woff2" crossOrigin='anonymous'></link>
-
-        <meta property="og:image" content="<generated>" />
-        <meta property="og:image:alt" content="About Acme Crimea-Roof" />
-        <meta property="og:image:type" content="image/logo-roof.svg" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
+        <link rel="preload" href="public/fonts/HeliosCondC-Bold-webfont.ttf" as="font" type="font/woff2" crossOrigin='anonymous'></link>  
      
       </Head>
       <NextNProgress color='#FE8702' startPosition={1}/>
