@@ -39,10 +39,10 @@ export default function Home() {
         <meta property="og:image:width" content="400" />
         <meta property="og:image:height" content="300" /> */}
 
-        <meta property="og:image" content="<generated>" />
-        <meta property="og:image:type" content="<generated>" />
-        <meta property="og:image:width" content="<generated>" />
-        <meta property="og:image:height" content="<generated>" />
+        <meta property="og:url" content="https://w.forfun.com/fetch/7d/7db7d55995bd8690e98b42b2d57aa496.jpeg"/>
+        <meta property="og:title" content="Крым-Кровля123"/>
+        <meta property="og:description" content="Компания Крым-Кровля12345"/>
+        <meta property="og:image" content="https://w.forfun.com/fetch/7d/7db7d55995bd8690e98b42b2d57aa496.jpeg"/>
       </Head>
       <div className="home">
         <Slider/>
