@@ -30,18 +30,13 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <link rel="icon" href="image/logo-roof.svg"/>
 
-       
-        {/* <meta property="og:title" content="ООО Крым-Кровля123" />
-        <meta property="og:description" content="Сайт фирмы ООО Крым-Кровля" />
-        <meta property="og:image" content="image/photo1.png" />
-        <meta property="og:image:alt" content="Logo Crimea-roof" />
-        <meta property="og:image:type" content="image/photo1.png" />
-        <meta property="og:image:width" content="400" />
-        <meta property="og:image:height" content="300" /> */}
+
 
         <meta property="og:url" content="https://crimea-roof.ru/"/>
-        <meta property="og:title" content="Крым-Кровля123"/>
-        <meta property="og:description" content="Компания Крым-Кровля12345"/>
+        <meta property="og:title" content="ООО Крым-Кровля"/>
+        <meta property="og:description" content="Компания Крым-Кровля предпологает огромный выбор услуг по эксплуатации мягкой кровли.
+                                                Выполняем монтаж ПВХ мембраны в крыму. Позвоните или напишите сообщение в Viber, WhatsApp. 
+                                                Выезд по Крыму бесплатный. Замеряем и посчитаем стоимость гидроизоляции."/>
         <meta property="og:image" content="https://crimea-roof.ru/_next/image?url=%2Fimage%2FphotoPVH%2Fpvh8.jpg&w=2048&q=80"/>
       </Head>
       <div className="home">
