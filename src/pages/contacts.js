@@ -19,7 +19,7 @@ export default function Contacts() {
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <link rel="icon" href="image/logo-roof.svg"/>
 
-        <meta property="og:url" content="https://crimea-roof.ru/"/>
+        <meta property="og:url" content="https://crimea-roof.ru/contacts"/>
         <meta property="og:title" content="ООО Крым-Кровля | Контакты"/>
         <meta property="og:description" content="Крым-Кровля, Контактное лицо, Телефон, Telegram, Viber, WhatsApp, Контакты"/>
         <meta property="og:image" content="https://crimea-roof.ru/_next/image?url=%2Fimage%2FphotoPVH%2Fpvh8.jpg&w=2048&q=80"/>
