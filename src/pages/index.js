@@ -23,7 +23,7 @@ export default function Home() {
     <>
       <Head>
         <title>Крым-Кровля | Главная</title>
-        <meta name="description" content="Компания Крым-Кровля предпологает огромный выбор услуг по эксплуатации мягкой кровли"/>
+        <meta name="description" content="Компания Крым-Кровля предполагает огромный выбор услуг по эксплуатации мягкой кровли"/>
         <meta name="keywords" content="ООО Крым Кровля, ООО Крым-Кровля, ООО крым кровля, 
                                крым кровля, Крым кровля, Крым Кровля, 
                                крым кровля Симферополь, Крым кровля Симферополь, Крым Кровля Симферополь,"/>
@@ -34,8 +34,7 @@ export default function Home() {
 
         <meta property="og:url" content="https://crimea-roof.ru/"/>
         <meta property="og:title" content="ООО Крым-Кровля"/>
-        <meta property="og:description" content="Компания Крым-Кровля предпологает огромный выбор услуг по эксплуатации мягкой кровли.
-                                                Выполняем монтаж ПВХ мембраны в крыму. Позвоните или напишите сообщение в Viber, WhatsApp. 
+        <meta property="og:description" content="Компания Крым-Кровля предполагает огромный выбор услуг по эксплуатации мягкой кровли. 
                                                 Выезд по Крыму бесплатный. Замеряем и посчитаем стоимость гидроизоляции."/>
         <meta property="og:image" content="https://crimea-roof.ru/_next/image?url=%2Fimage%2FphotoPVH%2Fpvh8.jpg&w=2048&q=80"/>
       </Head>
