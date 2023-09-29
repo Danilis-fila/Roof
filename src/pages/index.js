@@ -31,9 +31,9 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <link rel="icon" href="image/logo-roof.svg"/>
 
-        <meta property="og:image" content="<generated>" />
+        <meta property="og:image" content="image" />
         <meta property="og:image:alt" content="About Acme Crimea-Roof" />
-        <meta property="og:image:type" content="image/logo-roof.svg" />
+        <meta property="og:image:type" content="image/photo1.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
       </Head>
