@@ -22,7 +22,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <meta name="title" content="Крым-Кровля | Главная"/>
+        <title>Крым-Кровля | Главная</title>
         <meta name="description" content="Компания Крым-Кровля предполагает огромный выбор услуг по эксплуатации мягкой кровли"/>
         <meta name="keywords" content="ООО Крым Кровля, ООО Крым-Кровля, ООО крым кровля, 
                                крым кровля, Крым кровля, Крым Кровля, 

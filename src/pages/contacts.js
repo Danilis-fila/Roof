@@ -11,7 +11,7 @@ export default function Contacts() {
   return (
     <>
       <Head>
-        <meta name="title" content="Крым Кровля | Контакты"/>
+        <title>Крым Кровля | Контакты</title>
         <meta name="description" content="Крым-Кровля, Контактное лицо, Телефон, Telegram, Viber, WhatsApp, Контакты"/>
         <meta name="keywords" content="ООО Крым Кровля, ООО Крым-Кровля, ООО крым кровля, 
                                крым кровля, Крым кровля, Крым Кровля, 
@@ -21,7 +21,7 @@ export default function Contacts() {
 
         <meta property="og:url" content="https://crimea-roof.ru/contacts"/>
         <meta property="og:title" content="ООО Крым-Кровля | Контакты"/>
-        <meta property="og:description" content="Крым-Кровля, Контактное лицо, Телефон, Telegram, Viber, WhatsApp, Контакты"/>
+        <meta property="og:description" content="Контактное лицо, Телефон, Telegram, Viber, WhatsApp, Контакты"/>
         <meta property="og:image" content="https://crimea-roof.ru/_next/image?url=%2Fimage%2FphotoPVH%2Fpvh8.jpg&w=2048&q=80"/>
       </Head>
       
