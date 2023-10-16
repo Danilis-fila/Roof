@@ -6,12 +6,13 @@ export default function AboutTheCompany() {
     <>
       <Head>
         <title>Крым Кровля | О компании</title>
+        <meta name="robots" content="index, follow" />
         <meta name="description" content="Наша кровля в Симферополе, Севастополе, Ялте, Алуште, Керчи, Крыму"/>
         <meta name="keywords" content="ООО Крым Кровля, ООО Крым-Кровля, ООО крым кровля, 
                                крым кровля, Крым кровля, Крым Кровля, 
                                крым кровля Симферополь, Крым кровля Симферополь, Крым Кровля Симферополь,"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <link rel="icon" href="image/logo-roof.svg"/>
+        <link rel="icon" href="/favicon.ico"/>
 
         <meta property="og:url" content="https://crimea-roof.ru/about_the_company"/>
         <meta property="og:title" content="ООО Крым-Кровля | О компании"/>

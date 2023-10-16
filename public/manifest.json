@@ -1,7 +1,7 @@
 {
   "name": "Крым-Кровля",
   "lang": "ru",
-  "short_name": "КрымКровля",
+  "short_name": "Крым-Кровля",
   "description": "Сайт для приобретения услуг по мягкой кровли",
   "start_url": "/",
   "scope": "/404",
@@ -11,8 +11,8 @@
   "orientation": "any",
   "icons": [
       {
-          "src": "/public/image/logo-roof.svg",
-          "sizes": "512x512"
+          "src": "/favicon.ico",
+          "sizes": "256x154"
       }
   ]
 }
