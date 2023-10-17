@@ -14,9 +14,6 @@ export default function Contacts() {
         <title>Крым Кровля | Контакты</title>
         <meta name="robots" content="index, follow" />
         <meta name="description" content="Крым-Кровля, Контактное лицо, Телефон, Telegram, Viber, WhatsApp, Контакты"/>
-        <meta name="keywords" content="ООО Крым Кровля, ООО Крым-Кровля, ООО крым кровля, 
-                               крым кровля, Крым кровля, Крым Кровля, 
-                               крым кровля Симферополь, Крым кровля Симферополь, Крым Кровля Симферополь,"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <link rel="icon" href="/favicon.ico"/>
 
