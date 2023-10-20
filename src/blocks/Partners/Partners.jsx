@@ -17,7 +17,7 @@ export default function Partners() {
                     slidesPerView="auto"
                     loop={true}
                     modules={[Autoplay]}
-                    autoplay={{ delay: 5000, disableOnInteraction: false}}
+                    autoplay={{ delay: 2000, disableOnInteraction: false}}
                     breakpoints={{
                         1600: {
                             slidesPerView: 4

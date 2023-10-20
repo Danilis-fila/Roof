@@ -1,44 +1,44 @@
 [
   {
     "id": 1,
-    "image": "/image/photoPVH/pvh20.jpg",
-    "image_array": ["/image/photoPVH/pvh20.jpg", "/image/photoPVH/pvh19.jpg", "/image/photoPVH/pvh21.jpg"],
+    "image": "/image/photoPVH/pvh20.webp",
+    "image_array": ["/image/photoPVH/pvh20.webp", "/image/photoPVH/pvh19.webp", "/image/photoPVH/pvh21.webp"],
     "title": "Вент шахты спорткомплекс «Динамо»"
   },
   {
     "id": 2,
-    "image": "/image/photoPVH/pvh23.jpg",
-    "image_array": ["/image/photoPVH/pvh23.jpg", "/image/photoPVH/pvh22.jpg"],
+    "image": "/image/photoPVH/pvh23.webp",
+    "image_array": ["/image/photoPVH/pvh23.webp", "/image/photoPVH/pvh22.webp"],
     "title": "Плоская кровля Миндальное"
   },
   {
     "id": 3,
-    "image": "/image/photoPVH/pvh24.jpg",
-    "image_array": ["/image/photoPVH/pvh24.jpg", "/image/photoPVH/pvh25.jpg", "/image/photoPVH/pvh29.jpg", "/image/photoPVH/pvh30.jpg"],
+    "image": "/image/photoPVH/pvh24.webp",
+    "image_array": ["/image/photoPVH/pvh24.webp", "/image/photoPVH/pvh25.webp", "/image/photoPVH/pvh29.webp", "/image/photoPVH/pvh30.webp"],
     "title": "Балластная кровля \n «Пансионат им. Терлецкого»"
   },
   {
     "id": 4,
-    "image": "/image/photoPVH/pvh8.jpg",
-    "image_array": ["/image/photoPVH/pvh8.jpg", "/image/photoPVH/pvh12.jpg", "/image/photoPVH/pvh9.jpg", "/image/photoPVH/pvh11.jpg"],
+    "image": "/image/photoPVH/pvh8.webp",
+    "image_array": ["/image/photoPVH/pvh8.webp", "/image/photoPVH/pvh12.webp", "/image/photoPVH/pvh9.webp", "/image/photoPVH/pvh11.webp"],
     "title": "Плоская кровля с зенитными \n фонарями Алупка"
   },
   {
     "id": 5,
-    "image": "/image/photoPVH/pvh27.jpg",
-    "image_array": ["/image/photoPVH/pvh26.jpg", "/image/photoPVH/pvh27.jpg", "/image/photoPVH/pvh28.jpg", "/image/photoPVH/pvh29.jpg", "/image/photoPVH/pvh30.jpg"],
+    "image": "/image/photoPVH/pvh27.webp",
+    "image_array": ["/image/photoPVH/pvh26.webp", "/image/photoPVH/pvh27.webp", "/image/photoPVH/pvh28.webp", "/image/photoPVH/pvh29.webp", "/image/photoPVH/pvh30.webp"],
     "title": "Гидроизоляция фасадных кронштейнов"
   },
   {
     "id": 6,
-    "image": "/image/photoPVH/pvh39.jpg",
-    "image_array": ["/image/photoPVH/pvh39.jpg", "/image/photoPVH/pvh40.jpg", "/image/photoPVH/pvh41.jpg", "/image/photoPVH/pvh34.jpg", "/image/photoPVH/pvh35.jpg", "/image/photoPVH/pvh36.jpg", "/image/photoPVH/pvh37.jpg", "/image/photoPVH/pvh38.jpg"],
+    "image": "/image/photoPVH/pvh39.webp",
+    "image_array": ["/image/photoPVH/pvh39.webp", "/image/photoPVH/pvh40.webp", "/image/photoPVH/pvh41.webp", "/image/photoPVH/pvh34.webp", "/image/photoPVH/pvh35.webp", "/image/photoPVH/pvh36.webp", "/image/photoPVH/pvh37.webp", "/image/photoPVH/pvh38.webp"],
     "title": "Реконструкция Ленино"
   },
   {
     "id": 7,
-    "image": "/image/photoPVH/pvh31.jpg",
-    "image_array": ["/image/photoPVH/pvh31.jpg","/image/photoPVH/pvh42.jpg","/image/photoPVH/pvh43.jpg","/image/photoPVH/pvh44.jpg","/image/photoPVH/pvh45.jpg","/image/photoPVH/pvh46.jpg","/image/photoPVH/pvh47.jpg","/image/photoPVH/pvh48.jpg"],
+    "image": "/image/photoPVH/pvh31.webp",
+    "image_array": ["/image/photoPVH/pvh31.webp","/image/photoPVH/pvh42.webp","/image/photoPVH/pvh43.webp","/image/photoPVH/pvh44.webp","/image/photoPVH/pvh45.webp","/image/photoPVH/pvh46.webp","/image/photoPVH/pvh47.webp","/image/photoPVH/pvh48.webp"],
     "title": "Дорожки ТЦ зенит"
   }
 ]

@@ -23,10 +23,10 @@ export default function AboutUs() {
     const rect = animateElements?.getBoundingClientRect();
     if (rect === undefined) return;
     const win = window.innerHeight - rect.top;
-    if ((win + 450) > 0 && runningNumber) {
+    if ((win - 150) > 0 && runningNumber) { //450
       runningNumber = false;
       outNum(300, 3500, 1, '.aboutUs__number-project');
-      outNum(7500, 3000, 10, '.aboutUs__number-performed');
+      outNum(75000, 3000, 100, '.aboutUs__number-performed');
       outNum(10, 5000, 1, '.aboutUs__number-years');
     }
   }
@@ -57,7 +57,7 @@ export default function AboutUs() {
 
           <div className="aboutUs__number">
             <p className="aboutUs__more aboutUs__more-performed aboutUs__number"></p>
-            <p className="aboutUs__number aboutUs__number-performed">7500</p>
+            <p className="aboutUs__number aboutUs__number-performed">75000</p>
           </div>
         </div> 
 
