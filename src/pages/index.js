@@ -31,8 +31,8 @@ export default function Home() {
                                       ПВХ кровля крыша, Гидроизоляция террасы, ПВХ воронки Крым, Воронки для плоской кровли, ПВХ металл, Крым Кровля ПВХ,
                                       Ремонт ПВХ Крым, Ремонт плоской кровли крыши, Ремонт битумной кровли, Дорожки для плоской крыши, Эксплуатируемая кровля"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <link rel="icon" href="favicon.ico?" type="image/x-icon"/>
-        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="icon" href="https://crimea-roof.ru/favicon.ico" type="image/x-icon"/>
+        <link rel="shortcut icon" href="https://crimea-roof.ru/favicon.ico" />
 
         <meta property="og:url" content="https://crimea-roof.ru"/>
         <meta property="og:title" content="ООО Крым-Кровля | Главная"/>

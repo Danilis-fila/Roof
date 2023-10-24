@@ -51,7 +51,7 @@ export default function Header() {
 
       <div className="header__bottom-line">
         <div className="header__bottom-panel">
-          <div className="header__logo"></div> 
+          <div className="header__logo"></div>          
           <div className="header__menu">
           <div className={nav ? "header__bg--active" : "header__bg"}></div>
             <ul className={nav ? "header__menu-items header__menu-items--active" : "header__menu-items"}>
