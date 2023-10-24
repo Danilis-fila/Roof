@@ -43,7 +43,7 @@ export default function Services() {
         <meta property="og:url" content="https://crimea-roof.ru/services"/>
         <meta property="og:title" content="ООО Крым-Кровля | Услуги"/>
         <meta property="og:description" content="Огромный выбор услуг по эксплуатации мягкой кровли в Крыму. Услуги по эксплуатации мягкой кровли"/>
-        <meta property="og:image" content="https://crimea-roof.ru/_next/image?url=%2Fimage%2FphotoPVH%2Fpvh8.jpg&w=2048&q=80"/>
+        <meta property="og:image" content="https://crimea-roof.ru/_next/static/media/logo-roof.32886752.svg"/>
       </Head>
       <div className="services">
             <div className="services__wrapper">
