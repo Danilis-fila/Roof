@@ -37,6 +37,11 @@ export default function Home() {
         <meta property="og:title" content="ООО Крым-Кровля | Главная"/>
         <meta property="og:description" content="Компания Крым-Кровля предполагает огромный выбор услуг по эксплуатации мягкой кровли. Выезд по Крыму бесплатный. Замеряем и посчитаем стоимость гидроизоляции."/>
         <meta property="og:image" content="https://crimea-roof.ru/_next/static/media/logo-roof.32886752.svg"/>
+
+        <meta property="twitter:title" content="ООО Крым-Кровля | Главная"/>
+        <meta property="twitter:description" content="Компания Крым-Кровля предполагает огромный выбор услуг по эксплуатации мягкой кровли"/>
+        <meta property="twitter:card" content="https://crimea-roof.ru/_next/static/media/logo-roof.32886752.svg"/>
+        <meta property="twitter:image" content="https://crimea-roof.ru/_next/static/media/logo-roof.32886752.svg"/>
       </Head>
       
       <div className="home">
