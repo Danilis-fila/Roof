@@ -16,7 +16,7 @@ export default function Contacts() {
         <meta name="description" content="Крым-Кровля, Контактное лицо, Телефон, Telegram, Viber, WhatsApp, Контакты"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <link rel="icon" href="/favicon.ico"/>
-
+        <meta name="keywords" content="мягкая кровля, кровля симферополь, кровельные работы, крыша из пвх мембраны, крым кровля, крыша крым, из чего сделать крышу, сделать кровлю, чем перекрыть крышу, что такое пвх мембрана"/>
         <meta property="og:url" content="https://crimea-roof.ru/contacts"/>
         <meta property="og:title" content="ООО Крым-Кровля | Контакты"/>
         <meta property="og:description" content="Контактное лицо, Телефон, Telegram, Viber, WhatsApp, Контакты"/>

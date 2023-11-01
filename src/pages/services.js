@@ -39,7 +39,7 @@ export default function Services() {
         <meta name="description" content="Огромный выбор услуг по эксплуатации мягкой кровли в Крыму. Услуги по эксплуатации мягкой кровли"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <link rel="icon" href="/favicon.ico"/>
-
+        <meta name="keywords" content="мягкая кровля, кровля симферополь, кровельные работы, крыша из пвх мембраны, крым кровля, крыша крым, из чего сделать крышу, сделать кровлю, чем перекрыть крышу, что такое пвх мембрана"/>
         <meta property="og:url" content="https://crimea-roof.ru/services"/>
         <meta property="og:title" content="ООО Крым-Кровля | Услуги"/>
         <meta property="og:description" content="Огромный выбор услуг по эксплуатации мягкой кровли в Крыму. Услуги по эксплуатации мягкой кровли"/>
