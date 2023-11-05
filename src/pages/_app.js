@@ -65,6 +65,7 @@ export default function App({ Component, pageProps }) {
         <link rel="preconnect" href="https://crimea-roof.ru" />
         <link rel="dns-prefetch" href="https://crimea-roof.ru" />
         <meta name="google-site-verification" content="W1qQiOpaHsnbmgRPXhUXTF3f_4SbF1zKBKZLKfvfMnI" />
+        <meta name="yandex-verification" content="f2cdafc9a3e0f421" />
         <link rel="preload" href="public/fonts/HeliosCondC-Bold-webfont.ttf" as="font" type="font/woff2" crossOrigin='anonymous'></link>  
       </Head>
       <NextNProgress color='#FE8702' startPosition={1}/>
