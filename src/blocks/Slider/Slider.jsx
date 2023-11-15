@@ -22,7 +22,8 @@ export default function Slider() {
                                 loading="eager" 
                                 src={slide.img} 
                                 alt={slide.sliderTitle} 
-                                fill
+                                width={1500}
+                                height={1500}
                             />
                             <div className="slider__slide-external">
                                 <div className="slider__slite-title">{slide.sliderTitle}</div>

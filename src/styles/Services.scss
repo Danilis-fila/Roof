@@ -1,10 +1,8 @@
 @use '../modules/variables' as v;
 
 .services {
+    padding: 0 10% 5% 10%;
 
-    &__wrapper {
-        padding: 0 10%;
-    }
 
     &__title {
         font-size: 28px;
@@ -23,41 +21,163 @@
         }
     }
 
+    &__wrapper {
+        width: 100%;
+       // height: 560px;
+        display: grid;
+    }
+
+    &__items {
+        width: 100%;
+        min-width: 0;
+    }
+
     &__item {
-        margin: 0 0 50px 0;
-       // transform: translateY(80px);
-    }
+        min-width: 0;
+        display: flex;
+        margin-bottom: 6em;
 
-    &__item-title {
-        font-size: 28px;
-        line-height: 1.1;
-        margin-bottom: 30px;
-        font-family: 'Helios-Bold';
-        color: #000;
-    }
-
-    &__item-img {
-        width: 100%!important;
-        height: 450px;
-        margin: 0 0 10px 0;
-    }
-
-    &__item-line {
-        &::after {
-            content: "";
-            width: 100%;
-            height: 30px;
-            border-bottom: 1px solid v.$color-lightGrey;
+        &-swiper {
             display: block;
+            width: 50%;
+            height: 560px;
+            
+            .swiper {
+                width: 100%;
+                height: 100%;
+              }
+              
+              .swiper-slide {
+                text-align: center;
+                font-size: 18px;
+                background: #fff;
+              
+                /* Center slide text vertically */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              }
+              
+              .swiper-slide img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+              
+              body {
+                background: #000;
+                color: #000;
+              }
+              
+              .swiper {
+                width: 100%;
+                height: 300px;
+                margin-left: auto;
+                margin-right: auto;
+              }
+              
+              .swiper-slide {
+                background-size: cover;
+                background-position: center;
+              }
+              
+              .mySwiper2 {
+                height: 80%;
+                width: 100%;
+              }
+              
+              .mySwiper {
+                height: 20%;
+                box-sizing: border-box;
+                padding: 10px 0;
+              }
+              
+              .mySwiper .swiper-slide {
+                width: 25%;
+                height: 100%;
+                opacity: 0.4;
+                cursor: pointer;
+              }
+              
+              .mySwiper .swiper-slide-thumb-active {
+                opacity: 1;
+              }
+              
+              .swiper-slide img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+        }
+
+        &-text {
+            display: block;
+            width: 50%;
+            height: 100%;
+            display: block;
+            padding: 5% 7%;
+        }
+        
+        &-img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+
+        &-title {
+            font-family: "Helios-Bold";
+            font-size: 32px;
+            margin-bottom: 0.5em;
+            color: #000;
+        }
+
+        &-desc {
+            font-family: "Helios-Medium";
+            font-size: 18px;
+            color: #000;
         }
     }
 
-    &__item-desc {
-        color: #000;
-        font-size: 18px;
-        font-family: 'Helios-Medium';
+
+
+    // &__item {
+    //     margin: 0 0 50px 0;
+    //    // transform: translateY(80px);
+    // }
+
+    // &__item-title {
+    //     font-size: 28px;
+    //     line-height: 1.1;
+    //     margin-bottom: 30px;
+    //     font-family: 'Helios-Bold';
+    //     color: #000;
+    // }
+
+    // &__item-img {
+    //     width: 100%!important;
+    //     height: 450px;
+    //     margin: 0 0 10px 0;
+    // }
+
+    // &__item-line {
+    //     &::after {
+    //         content: "";
+    //         width: 100%;
+    //         height: 30px;
+    //         border-bottom: 1px solid v.$color-lightGrey;
+    //         display: block;
+    //     }
+    // }
+
+    // &__item-desc {
+    //     color: #000;
+    //     font-size: 18px;
+    //     font-family: 'Helios-Medium';
         
-    }
+    // }
 }
 
 @media (max-width: v.$laptop) {
@@ -69,6 +189,10 @@
         &__wrapper {
             padding: 0 15px;
         }
+        
+        .swiper-button-prev, .swiper-button-next {
+            display: none;
+        }
     }
 }
 
@@ -76,6 +200,36 @@
     .services {
         &__title {
             margin-top: 100px;
+        }
+
+        &__item {
+            display: block;
+
+            &-swiper {
+                width: 100%;
+            }
+
+            &-text {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: v.$phone_L) {
+    .services {
+        &__item {
+            &-title {
+                font-size: 25px;
+            }
+
+            &-desc {
+                font-size: 14px;
+            }
+        }
+
+        &__item-swiper {
+            height: 400px;
         }
     }
 }

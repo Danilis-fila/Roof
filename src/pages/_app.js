@@ -56,8 +56,6 @@ export default function App({ Component, pageProps }) {
     <>
       <Head>
         <meta name="robots" content="index, follow" />
-        <meta name="description" content="Крым-Кровля, Контактное лицо, Телефон, Telegram, Viber, WhatsApp, Контакты, "/>
-        {/* <meta name="keywords" content="крым кровля, ооо крым кровля, пвх мембрана крым, пвх мембрана симферополь, плоская кровля симферополь, аэратор симферополь, дорожки пвх, гидроизоляция фундамента, гидроизоляция кровли пвх, пвх кровля крыша, гидроизоляция террасы, пвх воронки крым, воронки для плоской кровли, пвх металл, крым кровля пвх, ремонт пвх крым, ремонт плоской кровли крыши, ремонт битумной кровли, дорожки для плоской крыши, эксплуатируемая кровля"/> */}
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <link rel="icon" href="/favicon.ico"/>
         <link rel='manifest' href='/manifest.json'></link>

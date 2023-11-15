@@ -54,8 +54,8 @@ export default function Gallery() {
                       blurDataURL="/image/Крым-Кровля-Blur.png"  
                       quality={80}  
                       alt="Фото мембраны" 
-                      width={500} 
-                      height={500}
+                      width={1000} 
+                      height={1000}
                     />
                   </div>
                   <div className="gallery__item-title">{data.title}</div>

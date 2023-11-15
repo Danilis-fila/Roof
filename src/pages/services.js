@@ -1,9 +1,25 @@
-import React, { useEffect, useCallback } from 'react';
+import React, { useEffect, useCallback,  useRef, useState } from 'react';
 import Head from 'next/head';
 import servicesData from './Services.json';
 import Image from 'next/image';
 
+import { Swiper, SwiperSlide } from 'swiper/react';
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/free-mode';
+import 'swiper/css/navigation';
+import 'swiper/css/thumbs';
+import { FreeMode, Navigation, Thumbs } from 'swiper';
+
+import { Autoplay } from 'swiper';
+import 'swiper/css/autoplay';
+import Slider from '@/blocks/Slider/Slider';
+
+
 export default function Services() {
+
+ 
+
 
   const dataScroll = useCallback(() => {
     const animateElements = document.querySelectorAll('[data-scroll]');
@@ -31,23 +47,13 @@ export default function Services() {
       })
   }, [dataScroll])
 
+  
   return (
     <>
       <Head>
         <title>Крым-Кровля | Услуги</title>
-        <meta name="description" content="Добро пожаловать на сайт крым кровля в симферополе, посвященный ПВХ кровлям — идеальному решению для вашей крыши. Мы предлагаем качественные и долговечные ПВХ кровельные системы, созданные с использованием современных материалов. Наши профессиональные услуги и широкий выбор продукции позволят вам надежно защитить ваш дом от непогоды и сохранить его красоту на протяжении многих лет. Обратитесь к нам уже сегодня и узнайте, как ПВХ кровли могут улучшить ваше жилище."/>
-        <meta name="keywords" content="пвх кровля - долговечность и надежность, 
-                                       качественные пвх кровли по доступным ценам, 
-                                       современные материалы для ПВХ кровельных систем, 
-                                       преимущества пвх кровельных покрытий,
-                                       профессиональная установка ПВХ кровли,
-                                       долговечность пвх покрытий для кровли,
-                                       энергоэффективность и экологичность пвх кровельных систем,
-                                       пвх кровли - оптимальное решение для любого климата,
-                                       практичность и долговечность пвх кровельных покрытий,
-                                       инновационные пвх кровельные решения для защиты вашего дома"/>
-
-
+        <meta name="description" content="Добро пожаловать на сайт Крым кровля в Симферополе, мы предлагаем дешевую установку и продажу высококачественных ПВХ мембран в Крыму. Кровля Симферополь, Крым"/>
+        <meta name="keywords" content="крым кровля, крым кровля симферополь, мягкая мембрана, мягкая мембрана для кровли, гидроизоляция мягкой мембраной, материалы для гидроизоляции, мягкая мембрана для фасада, качественная мягкая мембрана, компания занимающаяся мягкой мембраной, гидроизоляционные работы, монтаж мягкой мембраны, дешевая пвх мембрана, пвх кровли низкой стоимости, пвх кровельные материалы, пвх кровельные покрытия, гидроизоляционные работы, кровельные работы, установка гибкого покрытия, водонепроницаемая кровля, монтаж ПВХ мембраны"/> 
         <meta name="robots" content="index, follow" />
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <link rel="icon" href="/favicon.ico"/>
@@ -57,30 +63,95 @@ export default function Services() {
         <meta property="og:image" content="https://crimea-roof.ru/_next/static/media/logo-roof.32886752.svg"/>
       </Head>
       <div className="services">
-            <div className="services__wrapper">
+            <div className="services__mainTitle">
                 <h1 className="services__title">УСЛУГИ</h1>
+            </div>
+
+            <div className='services__wrapper'>
+              <div className='services__items'>
                 {
-                  servicesData.map(data => {
-                      return (
-                          <div className="services__item" key={data.id} data-scroll="true">
-                              <h2 className="services__item-title">{data.title}</h2>
-                              <Image  placeholder="blur" 
-                                blurDataURL="/image/Крым-Кровля-Blur.png" 
-                                quality={100} 
-                                className="services__item-img" 
-                                src={data.img} 
-                                alt="фото мембраны" 
-                                width={500} 
-                                height={450}>
-                              </Image>
-                              <div className="services__item-desc">{data.description}</div>
-                              <div className="services__item-line"></div>
-                          </div>
-                      )
+                  servicesData.map((data, index) => {
+                  const [thumbsSwiper, setThumbsSwiper] = useState(null);
+
+                    return(
+                      <div className='services__item' data-scroll="true">
+                          <div className='services__item-swiper'>
+                          <Swiper
+                           style={{
+                            '--swiper-navigation-color': '#FE8702',
+                            '--swiper-pagination-color': '#FE8702',
+                           }}
+                            spaceBetween={10}
+                            navigation={true}
+                            thumbs={{swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null}}
+                            modules={[FreeMode, Navigation, Thumbs]}
+                            className="mySwiper2">
+                            <SwiperSlide>
+                              <Image placeholder="blur" blurDataURL="/image/Крым-Кровля-Blur.png" alt="Обновите страницу..." src={data.img[0]}  quality={80}  width={1000} height={1000}></Image>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                              <Image placeholder="blur" blurDataURL="/image/Крым-Кровля-Blur.png" alt="Обновите страницу..." src={data.img[1]}  quality={80}  width={1000} height={1000}></Image>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                              <Image placeholder="blur" blurDataURL="/image/Крым-Кровля-Blur.png" alt="Обновите страницу..." src={data.img[2]}  quality={80}  width={1000} height={1000}></Image>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                              <Image placeholder="blur" blurDataURL="/image/Крым-Кровля-Blur.png" alt="Обновите страницу..." src={data.img[3]}  quality={80}  width={1000} height={1000}></Image>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                              <Image placeholder="blur" blurDataURL="/image/Крым-Кровля-Blur.png" alt="Обновите страницу..." src={data.img[4]}  quality={80}  width={1000} height={1000}></Image>
+                            </SwiperSlide>
+                          </Swiper>
+        
+                          <Swiper
+                            onSwiper={setThumbsSwiper}
+                            spaceBetween={10}
+                            slidesPerView={4}
+                            freeMode={true}
+                            watchSlidesProgress={true}
+                            modules={[FreeMode, Navigation, Thumbs]}
+                            className="mySwiper"
+                            breakpoints={{
+                              1024: {
+                                slidesPerView: 4
+                              },
+                              555: {
+                                  slidesPerView: 3
+                              },  
+                              100: {
+                                  slidesPerView: 2
+                              }
+                          }}>
+                            <SwiperSlide>
+                              <Image placeholder="blur" blurDataURL="/image/Крым-Кровля-Blur.png" alt="Обновите страницу..." src={data.img[0]}  quality={80}  width={1000} height={1000}></Image>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                              <Image placeholder="blur" blurDataURL="/image/Крым-Кровля-Blur.png" alt="Обновите страницу..." src={data.img[1]}  quality={80}  width={1000} height={1000}></Image>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                              <Image placeholder="blur" blurDataURL="/image/Крым-Кровля-Blur.png" alt="Обновите страницу..." src={data.img[2]}  quality={80}  width={1000} height={1000}></Image>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                              <Image placeholder="blur" blurDataURL="/image/Крым-Кровля-Blur.png" alt="Обновите страницу..." src={data.img[3]}  quality={80}  width={1000} height={1000}></Image>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                              <Image placeholder="blur" blurDataURL="/image/Крым-Кровля-Blur.png" alt="Обновите страницу..." src={data.img[4]}  quality={80}  width={1000} height={1000}></Image>
+                            </SwiperSlide>
+                          </Swiper>
+
+                        </div> 
+                        <div className='services__item-text'>
+                          <h2 className='services__item-title'>{data.title}</h2>
+                          <h2 className='services__item-desc'>{data.description}</h2>
+                        </div>
+                      </div>
+                    )
                   })
                 }
+              </div>
             </div>
-        </div>
+
+      </div>
     </> 
   )
 }

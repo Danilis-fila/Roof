@@ -21,8 +21,8 @@ export default function Service() {
                       placeholder="blur" 
                       blurDataURL="/image/Крым-Кровля-Blur.png" 
                       quality={80}  
-                      width={500} 
-                      height={500}/>
+                      width={800} 
+                      height={800}/>
                   </div>
                   <div className="service__card-title">{data.title}</div>
                   <div className="service__card-desc">{data.description}</div>

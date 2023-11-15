@@ -30,10 +30,6 @@ export default function NotFoundPage() {
     <>
       <Head>
         <title>Ошибка 404</title>
-        <meta name="description" content="Не удалось загрузить страницу"/>
-
-
-
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <link rel="icon" href="image/logo-roof.svg"/>
       </Head>
