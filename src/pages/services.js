@@ -67,7 +67,7 @@ export default function Services() {
             <div className='services__items'>
               {           
                 servicesData.map((data, index) => {
-                  return <RenderItemsServices data = {data} index={index} />                    
+                  return <RenderItemsServices data = {data} index={index} key={index} />                    
                 })
               }
             </div>
