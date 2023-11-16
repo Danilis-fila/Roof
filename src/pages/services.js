@@ -74,9 +74,9 @@ export default function Services() {
                   const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
                     return(
-                      <div className='services__item' data-scroll="true">
+                      <div className='services__item' data-scroll="true" key={data.ui}>
                           <div className='services__item-swiper'>
-                          <Swiper
+                          <Swiper key={index}
                            style={{
                             '--swiper-navigation-color': '#FE8702',
                             '--swiper-pagination-color': '#FE8702',
@@ -103,7 +103,7 @@ export default function Services() {
                             </SwiperSlide>
                           </Swiper>
         
-                          <Swiper
+                          <Swiper key={data.id}
                             onSwiper={setThumbsSwiper}
                             spaceBetween={10}
                             slidesPerView={4}
