@@ -145,8 +145,10 @@ export default function Services() {
 
             <div className='services__wrapper'>
               <div className='services__items'>
-                {                  
+                {           
+                /* eslint-disable no-alert, no-console */       
                   renderItems()
+                  /* eslint-enable no-alert */
                 }
               </div>
             </div>
