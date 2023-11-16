@@ -1,4 +1,4 @@
-import React, { useEffect, useCallback,  useRef, useState } from 'react';
+import React, { useEffect, useCallback, useState } from 'react';
 import Head from 'next/head';
 import servicesData from './Services.json';
 import Image from 'next/image';
@@ -11,9 +11,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/thumbs';
 import { FreeMode, Navigation, Thumbs } from 'swiper';
 
-import { Autoplay } from 'swiper';
 import 'swiper/css/autoplay';
-import Slider from '@/blocks/Slider/Slider';
 
 
 export default function Services() {
@@ -47,7 +45,85 @@ export default function Services() {
       })
   }, [dataScroll])
 
+  const renderItems = useCallback(() => {
+    return servicesData.map((data, index) => {
+      const [thumbsSwiper, setThumbsSwiper] = useState(null);
+      return(
+        <div className='services__item' data-scroll="true" key={data.ui}>
+            <div className='services__item-swiper'>
+            <Swiper key={index}
+             style={{
+              '--swiper-navigation-color': '#FE8702',
+              '--swiper-pagination-color': '#FE8702',
+             }}
+              spaceBetween={10}
+              navigation={true}
+              thumbs={{swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null}}
+              modules={[FreeMode, Navigation, Thumbs]}
+              className="mySwiper2">
+              <SwiperSlide>
+                <Image placeholder="blur" blurDataURL="/image/Крым-Кровля-Blur.png" alt="Обновите страницу..." src={data.img[0]}  quality={80}  width={1000} height={1000}></Image>
+              </SwiperSlide>
+              <SwiperSlide>
+                <Image placeholder="blur" blurDataURL="/image/Крым-Кровля-Blur.png" alt="Обновите страницу..." src={data.img[1]}  quality={80}  width={1000} height={1000}></Image>
+              </SwiperSlide>
+              <SwiperSlide>
+                <Image placeholder="blur" blurDataURL="/image/Крым-Кровля-Blur.png" alt="Обновите страницу..." src={data.img[2]}  quality={80}  width={1000} height={1000}></Image>
+              </SwiperSlide>
+              <SwiperSlide>
+                <Image placeholder="blur" blurDataURL="/image/Крым-Кровля-Blur.png" alt="Обновите страницу..." src={data.img[3]}  quality={80}  width={1000} height={1000}></Image>
+              </SwiperSlide>
+              <SwiperSlide>
+                <Image placeholder="blur" blurDataURL="/image/Крым-Кровля-Blur.png" alt="Обновите страницу..." src={data.img[4]}  quality={80}  width={1000} height={1000}></Image>
+              </SwiperSlide>
+            </Swiper>
   
+            <Swiper key={data.id}
+              onSwiper={setThumbsSwiper}
+              spaceBetween={10}
+              slidesPerView={4}
+              freeMode={true}
+              watchSlidesProgress={true}
+              modules={[FreeMode, Navigation, Thumbs]}
+              className="mySwiper"
+              breakpoints={{
+                1024: {
+                  slidesPerView: 4
+                },
+                555: {
+                    slidesPerView: 3
+                },  
+                100: {
+                    slidesPerView: 2
+                }
+            }}>
+              <SwiperSlide>
+                <Image placeholder="blur" blurDataURL="/image/Крым-Кровля-Blur.png" alt="Обновите страницу..." src={data.img[0]}  quality={80}  width={1000} height={1000}></Image>
+              </SwiperSlide>
+              <SwiperSlide>
+                <Image placeholder="blur" blurDataURL="/image/Крым-Кровля-Blur.png" alt="Обновите страницу..." src={data.img[1]}  quality={80}  width={1000} height={1000}></Image>
+              </SwiperSlide>
+              <SwiperSlide>
+                <Image placeholder="blur" blurDataURL="/image/Крым-Кровля-Blur.png" alt="Обновите страницу..." src={data.img[2]}  quality={80}  width={1000} height={1000}></Image>
+              </SwiperSlide>
+              <SwiperSlide>
+                <Image placeholder="blur" blurDataURL="/image/Крым-Кровля-Blur.png" alt="Обновите страницу..." src={data.img[3]}  quality={80}  width={1000} height={1000}></Image>
+              </SwiperSlide>
+              <SwiperSlide>
+                <Image placeholder="blur" blurDataURL="/image/Крым-Кровля-Blur.png" alt="Обновите страницу..." src={data.img[4]}  quality={80}  width={1000} height={1000}></Image>
+              </SwiperSlide>
+            </Swiper>
+  
+          </div> 
+          <div className='services__item-text'>
+            <h2 className='services__item-title'>{data.title}</h2>
+            <h2 className='services__item-desc'>{data.description}</h2>
+          </div>
+        </div>
+      )
+    })
+  }, [])
+
   return (
     <>
       <Head>
@@ -69,84 +145,8 @@ export default function Services() {
 
             <div className='services__wrapper'>
               <div className='services__items'>
-                {
-                  servicesData.map((data, index) => {
-                  const [thumbsSwiper, setThumbsSwiper] = useState(null);
-
-                    return(
-                      <div className='services__item' data-scroll="true" key={data.ui}>
-                          <div className='services__item-swiper'>
-                          <Swiper key={index}
-                           style={{
-                            '--swiper-navigation-color': '#FE8702',
-                            '--swiper-pagination-color': '#FE8702',
-                           }}
-                            spaceBetween={10}
-                            navigation={true}
-                            thumbs={{swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null}}
-                            modules={[FreeMode, Navigation, Thumbs]}
-                            className="mySwiper2">
-                            <SwiperSlide>
-                              <Image placeholder="blur" blurDataURL="/image/Крым-Кровля-Blur.png" alt="Обновите страницу..." src={data.img[0]}  quality={80}  width={1000} height={1000}></Image>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                              <Image placeholder="blur" blurDataURL="/image/Крым-Кровля-Blur.png" alt="Обновите страницу..." src={data.img[1]}  quality={80}  width={1000} height={1000}></Image>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                              <Image placeholder="blur" blurDataURL="/image/Крым-Кровля-Blur.png" alt="Обновите страницу..." src={data.img[2]}  quality={80}  width={1000} height={1000}></Image>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                              <Image placeholder="blur" blurDataURL="/image/Крым-Кровля-Blur.png" alt="Обновите страницу..." src={data.img[3]}  quality={80}  width={1000} height={1000}></Image>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                              <Image placeholder="blur" blurDataURL="/image/Крым-Кровля-Blur.png" alt="Обновите страницу..." src={data.img[4]}  quality={80}  width={1000} height={1000}></Image>
-                            </SwiperSlide>
-                          </Swiper>
-        
-                          <Swiper key={data.id}
-                            onSwiper={setThumbsSwiper}
-                            spaceBetween={10}
-                            slidesPerView={4}
-                            freeMode={true}
-                            watchSlidesProgress={true}
-                            modules={[FreeMode, Navigation, Thumbs]}
-                            className="mySwiper"
-                            breakpoints={{
-                              1024: {
-                                slidesPerView: 4
-                              },
-                              555: {
-                                  slidesPerView: 3
-                              },  
-                              100: {
-                                  slidesPerView: 2
-                              }
-                          }}>
-                            <SwiperSlide>
-                              <Image placeholder="blur" blurDataURL="/image/Крым-Кровля-Blur.png" alt="Обновите страницу..." src={data.img[0]}  quality={80}  width={1000} height={1000}></Image>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                              <Image placeholder="blur" blurDataURL="/image/Крым-Кровля-Blur.png" alt="Обновите страницу..." src={data.img[1]}  quality={80}  width={1000} height={1000}></Image>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                              <Image placeholder="blur" blurDataURL="/image/Крым-Кровля-Blur.png" alt="Обновите страницу..." src={data.img[2]}  quality={80}  width={1000} height={1000}></Image>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                              <Image placeholder="blur" blurDataURL="/image/Крым-Кровля-Blur.png" alt="Обновите страницу..." src={data.img[3]}  quality={80}  width={1000} height={1000}></Image>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                              <Image placeholder="blur" blurDataURL="/image/Крым-Кровля-Blur.png" alt="Обновите страницу..." src={data.img[4]}  quality={80}  width={1000} height={1000}></Image>
-                            </SwiperSlide>
-                          </Swiper>
-
-                        </div> 
-                        <div className='services__item-text'>
-                          <h2 className='services__item-title'>{data.title}</h2>
-                          <h2 className='services__item-desc'>{data.description}</h2>
-                        </div>
-                      </div>
-                    )
-                  })
+                {                  
+                  renderItems()
                 }
               </div>
             </div>
